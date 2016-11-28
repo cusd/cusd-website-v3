@@ -1,0 +1,211 @@
+.about {
+
+  .sidebar-box {
+    @include sidebar-box($columns: 3.5, $side: left);
+
+    @media screen and (max-width: $medium-breakpoint){
+      background: none;
+    }
+  }
+
+  .quote {
+    @include grid-column($columns: 3.5, $offset: -0.5);
+    padding-top: rem-calc(160);
+
+    @media screen and (max-width: $medium-breakpoint){
+      display: none;
+      width: 0%;
+    }
+  }
+
+  .mission {
+    @include grid-column($columns: 6, $offset: 1.5);
+    padding: rem-calc(72 0);
+
+    @media screen and (max-width: $medium-breakpoint){
+      width: 100%;
+      margin: 0 !important;
+      padding: rem-calc(20 20);
+    }
+
+    h2 {
+      margin-bottom: rem-calc(16);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: rem-calc(48);
+    }
+  }
+
+  .values-section {
+    @include grid-row();
+
+    &__header {
+      @include grid-column($columns: 3);
+      height: rem-calc(298);
+      position: relative;
+
+      h2 {
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0,-50%,0);
+
+        @media #{$small-only} {
+          padding-left: 22%;
+        }
+      }
+    }
+
+    &__values {
+      @include grid-column($columns: 7, $offset: .5);
+      @media #{$small-only} {
+        @include grid-column($columns: 7, $offset: 2);
+      }
+    }
+
+    &__value {
+      width: 25%;
+      height: 0;
+      padding-top: 25%;
+      float: left;
+      position: relative;
+      transition: background-color $transition-speed;
+
+      @media #{$small-only} {
+        width: 50%;
+        padding-top: 50%;
+      }
+
+      &--icon-impact {
+        background: $mantis-tint image-url('icons/values/impact.svg') center 40% / 45% no-repeat;
+        //&:hover { background-color: $mantis; }
+      }
+      &--icon-diversity {
+        background: $ocean-green-tint image-url('icons/values/diversity.svg') center 40% / 60% no-repeat;
+        //&:hover { background-color: $ocean-green; }
+      }
+      &--icon-efficiency {
+        background: $gulf-stream-tint image-url('icons/values/efficiency.svg') center 40% / 45% no-repeat;
+        //&:hover { background-color: $gulf-stream; }
+      }
+      &--icon-sustainability {
+        background: $mantis-tint image-url('icons/values/sustainability.svg') center 40% / 45% no-repeat;
+        //&:hover { background-color: $mantis; }
+      }
+      &--icon-collaboration {
+        background: $ocean-green-tint image-url('icons/values/collaboration.svg') center 40% / 40% no-repeat;
+        //&:hover { background-color: $ocean-green; }
+      }
+      &--icon-responsibility {
+        background: $gulf-stream-tint image-url('icons/values/responsibility.svg') center 40% / 45% no-repeat;
+        //&:hover { background-color: $gulf-stream; }
+      }
+      &--icon-innovation {
+        background: $mantis-tint image-url('icons/values/innovation.svg') center 35% / 50% no-repeat;
+        //&:hover { background-color: $mantis; }
+      }
+      &--icon-engagement {
+        background: $ocean-green-tint image-url('icons/values/engagement.svg') center 40% / 40% no-repeat;
+        //&:hover { background-color: $ocean-green; }
+      }
+    }
+    
+    &__label {
+      position: absolute;
+      bottom: rem-calc(16);
+      left: 10%;
+      text-align: center;
+      width: 80%;
+      color: $white;
+      font-weight: $font-weight-bold;
+
+      @media #{$small-only} {
+        bottom: rem-calc(8);
+        font-size: 14px;
+      }
+
+    }
+  }
+
+  .sidebar-section {
+    @include grid-row;
+
+    &__header {
+      @include grid-column($columns: 3);
+      min-height: rem-calc(400);
+      position: relative;
+
+
+      @media #{$small-only} {
+        @include grid-column($columns: 6, $offset: .5);
+        min-height: rem-calc(80);
+      }
+    }
+
+    h2 {
+      position: absolute;
+      top: 50%;
+      transform: translate3d(0,-50%,0);
+
+      @media #{$small-only} {
+        transform: 0%;
+        padding-top: rem-calc(30);
+
+      }
+    }
+  }
+
+  
+
+  .teams-section {
+    @include grid-column($columns:8, $offset:.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem-calc(30 0 63 0);
+
+    @media #{$small-only} {
+      @include grid-column($columns:12, $offset: 0);
+      padding: rem-calc(0 12 20 12);
+    }
+
+    &__project {
+      padding-right: 1rem;
+      margin-top: rem-calc(48);
+      width: 75%;
+      @media #{$small-only} {
+       width: 100%
+     }
+   }
+   &__logo {
+    float: left;
+    width: percentage(2/6);
+    padding-top: percentage(2/6);
+    background-color: $light-gray;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+      //opacity: 1;
+      //transition: opacity $transition-speed;
+      //&:hover { opacity: .8 }
+    }
+
+    &__text {
+      float: left;
+      width: percentage(4/6);
+      padding-left: rem-calc(16);
+    }
+
+    &__name {
+      margin-top: rem-calc(-5);
+      //opacity: 1;
+      //transition: opacity $transition-speed;
+      //&:hover { opacity: .8 }
+    }
+
+    &__tagline {
+      font-size: rem-calc(20);
+    }
+  }
+}
+
+

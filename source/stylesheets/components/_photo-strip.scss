@@ -1,0 +1,50 @@
+.photo-strip {
+  box-shadow: $subtle-inner-shadow;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: rem-calc(72 10);
+  min-height: rem-calc(165);
+
+@media #{$small-only} {
+  background-position: center bottom;
+}
+
+
+  &__text {
+    @include grid-row();
+
+    h1, h2 {
+      margin: 0;
+      color: $white;
+      text-shadow: $subtle-text-shadow;
+    }
+  }
+
+ //&--lower {
+  //  background-position: 50% 70%;
+  //}
+
+  &--showcase {
+    min-height: rem-calc(500);
+    @media #{$small-only} {
+      min-height: rem-calc(300);
+    }
+  }
+
+  &--hero {
+    min-height: rem-calc(500);
+  }
+
+  &--page-header {
+    min-height: 0;
+    background-position: center 100%;
+
+    h1 {
+      line-height: 1;
+    }
+  }
+}
+.bumper{
+  background-position: 82%;
+}
