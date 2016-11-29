@@ -41,6 +41,7 @@ end
 #end
 
 page "/donate.html", :layout => "donate_temp"
+page "/seg.html", :layout => "donate_temp"
 
 configure :development do
   activate :livereload
