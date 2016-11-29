@@ -1,3 +1,19 @@
 .seg {
 
+.seg_logo {
+	 @include grid-column($columns: 4, $offset: 2);
+}
+
+.about {
+	@include grid-column($columns: 6, $offset: 2);
+	padding: rem-calc(42 0);
+
+
+	h2 {
+		margin-bottom: rem-calc(16);
+		color: $seg-blue-color;
+}
+}
+
+
 }
