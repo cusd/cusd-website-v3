@@ -164,6 +164,27 @@
 		line-height: rem-calc(18);
 		margin-top: rem-calc(-2);
 	}
+	.bck_img{
+		@include grid-column($columns: 12);
+		background: url(../images/seg/site-1.jpg) no-repeat;
+		background-size: 100%;
+		background-position: 0% 60%;
+		margin-top: 3%;
+		.footy{
+
+			margin: 6%;
+			@include grid-column($columns: 6, $offset: 3);
+			.mini{
+				margin-top: 2%;
+				width: 35%;
+			}
+			h4{
+				color:white;
+			}
+		}
+
+	}
+	
 
 
 }
