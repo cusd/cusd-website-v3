@@ -314,7 +314,13 @@
 				margin: rem-calc(60);
 				@media screen and (max-width: $small-breakpoint){
 					margin:0;
+					margin-top: rem-calc(30);
 				}
+				@media screen and (max-width: $medium-breakpoint){
+					margin:0;
+					margin-top: rem-calc(40);
+				}
+
 				// padding-top: rem-calc(50);
 				color:white;
 			}
