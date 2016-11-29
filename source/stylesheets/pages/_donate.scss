@@ -55,16 +55,26 @@
     @include grid-column($columns: 7, $offset: 0);
    
   }
+  .picture {
+    @include grid-column($columns: 3, $offset: 0);
+   width: 40%;
+   margin-right: 20px;
+   
+  }
 
   .vam {
     @include grid-column($columns: 5, $offset: 0);
     padding-left: 120px;
+    color: #FFFFFF;
+    h2{
+    	color:#FFFFFF;
+    }
 
 }
 .sidebar-box__wrapper_team {
 	@include grid-row();
-  max-width: 64rem;
     margin-left: 50px;
+   
 
 }
 .img_aligner_email{
