@@ -20,15 +20,12 @@
 		padding: rem-calc (40 0);
 
 		ul {
-			@include block-grid(6, rem-calc(10)); 
+			@include block-grid(5, rem-calc(10)); 
+			@media screen and (max-width: $small-breakpoint){
+	     		@include block-grid(2, rem-calc(10)); 
+		    }
 
 			list-style-type: none;
-		}
-
-		li {
-			float: left;
-			display: block;
-			margin: rem-calc(10 16);
 		}
 	}
 
