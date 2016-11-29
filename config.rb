@@ -40,6 +40,8 @@ end
  # proxy "/teams/#{team[0].split('-')[1]}.html", "/projects/template.html", :locals => {project: team[1], short_name: team[0].split('-')[1]}, :ignore => true
 #end
 
+page "/donate.html", :layout => "donate_temp"
+
 configure :development do
   activate :livereload
 end
