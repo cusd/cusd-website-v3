@@ -2,7 +2,36 @@
 
 	.seg_logo {
 		@include grid-column($columns: 4, $offset: 2);
+		width: rem-calc(300);
 	}
+	.design_build{
+		@include grid-column($columns: 6, $offset: 3);
+	}
+	.cusd_vam{
+		.bigX{
+			margin-top: rem-calc(50);
+			font-weight: 200;
+		}
+		li{
+			margin-top: rem-calc(50);
+
+		}
+		@media screen and (min-width: $large-breakpoint){
+     		.ul_spacer{
+				padding: 0 rem-calc(190);
+			}
+	    }
+		
+		ul{
+			@include block-grid(3);
+			@media screen and (max-width: $small-breakpoint){
+	     		@include block-grid(1); 
+		    }
+			$per-row: 3;
+			// $spacing: $block-grid-default-spacing; 
+		}
+	}
+
 
 	.about {
 		@include grid-column($columns: 6, $offset: 2);
