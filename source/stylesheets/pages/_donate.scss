@@ -36,5 +36,51 @@
     color: #000000;
     text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
 }
-	
+
+// STUFF FOR TEAMS
+
+
+.video{
+	margin-left:90px;
+	margin-top: 100px;
+}
+  .vam_logo{
+    margin-left: 130px;
+ } 
+ .sidebar-box_team {
+    @include sidebar-box($columns: 5, $side: right);
+    background: linear-gradient(to right, transparent calc((100% - 64rem)/2 + (0.58333 * 64rem)), $seg-blue-color calc((100% - 64rem)/2 + (0.58333 * 64rem)));
+}
+.director {
+    @include grid-column($columns: 7, $offset: 0);
+   
+  }
+
+  .vam {
+    @include grid-column($columns: 5, $offset: 0);
+    padding-left: 120px;
+
+}
+.sidebar-box__wrapper_team {
+	@include grid-row();
+  max-width: 64rem;
+    margin-left: 50px;
+
+}
+.img_aligner_email{
+    vertical-align: middle;
+ 	margin-bottom: 0.20em;
+    height: 15px;
+    width: 25px;
+  
+  }
+  .img_aligner_linkedin{
+    margin-left: 2%;
+    vertical-align: middle;
+ 	margin-bottom: 0.20em;
+    height: 20px;
+    width: 20px;
+  }
+
+
 }
