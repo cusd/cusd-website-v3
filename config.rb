@@ -42,7 +42,7 @@ end
 
 # removes pieces of standard template for donate and seg
 page "/donate.html", :layout => "donate_temp"
-page "/seg.html", :layout => "donate_temp"
+page "/seg.html", :layout => "seg_temp"
 
 configure :development do
   activate :livereload
