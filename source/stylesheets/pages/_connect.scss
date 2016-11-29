@@ -19,10 +19,9 @@
 	}
 
 	.contacts {
-		@include grid-column($columns: 9, $offset: 1);
+		@include block-grid(5, rem-calc(20)); 
 		margin: rem-calc(24 0 72);
-		display: flex;
-		flex-wrap: wrap;
+
 		//align-items: flex-start;
 
 		@media screen and (max-width: $medium-breakpoint){

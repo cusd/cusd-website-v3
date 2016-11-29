@@ -20,24 +20,24 @@
 		padding: rem-calc (40 0);
 
 		ul {
+			@include block-grid(6, rem-calc(10)); 
+
 			list-style-type: none;
 		}
 
 		li {
 			float: left;
 			display: block;
-			margin: rem-calc(4 10);
+			margin: rem-calc(10 16);
 		}
 	}
 
 	.members {
-		margin: 0 auto;
 		height: rem-calc(150);
 		width: rem-calc(150);
 	}
 
 	.member { 
-		margin:0;
 		padding-top: rem-calc(4);
 		font-weight: 400;
 		font-size: rem-calc(17);
