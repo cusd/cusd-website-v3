@@ -175,7 +175,7 @@
 
 		
 		
-		h1{
+		h2{
 			margin-top: rem-calc(100);
 			@include grid-column($columns:6, $offset:3);
 			text-align: center;
@@ -295,11 +295,15 @@
 		background-size: 100%;
 		background-position: 0% 60%;
 		margin-top: 3%;
+		@media screen and (max-width: $small-breakpoint){
+				background-size: 200%;
+			}
 
 		.footy{
 			@include grid-column($columns: 6, $offset: 3);
 			text-align: center;
-			min-height: rem-calc(260);
+			// min-height: rem-calc(260);
+			// margin-top: rem-calc(100);
 
 			.mini{
 				margin-top: 5%;
@@ -307,7 +311,11 @@
 				background-color: $seg-color;
 			}
 			h4{
-				padding-top: rem-calc(50);
+				margin: rem-calc(60);
+				@media screen and (max-width: $small-breakpoint){
+					margin:0;
+				}
+				// padding-top: rem-calc(50);
 				color:white;
 			}
 		}
