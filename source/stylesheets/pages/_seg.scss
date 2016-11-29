@@ -5,7 +5,7 @@
 		width: rem-calc(300);
 	}
 	.design_build{
-		margin-top: rem-calc(75);
+		margin-top: rem-calc(40);
 		@include grid-column($columns: 6, $offset: 3);
 	}
 
@@ -15,35 +15,35 @@
 			font-weight: 200;
 		}
 		li{
-			margin-top: rem-calc(75);
+			margin-top: rem-calc(40);
 
 		}
 		// @media screen and (min-width: $large-breakpoint){
-     		.ul_spacer{
+			.ul_spacer{
 				padding: 0 23%;
 			}
 	    // }
-		
-		ul{
-			@include block-grid(3);
-			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
-			$per-row: 3;
+
+	    ul{
+	    	@include block-grid(3);
+	    	@media screen and (max-width: $small-breakpoint){
+	    		@include block-grid(1); 
+	    	}
+	    	$per-row: 3;
 			// $spacing: $block-grid-default-spacing; 
 
 			.lighter{
 				font-weight: 200;
-				font-size: 3em;
+				font-size: 2em;
 			}
 			h2{
-			font-size: 5em;
-			font-weight: 400
-		}
+				font-size: 4em;
+				font-weight: 400
+			}
 		}
 	}
 	.cusd_vam > li {
-	  clear: none !important;
+		clear: none !important;
 	}
 	.stat{
 		@include grid-column($columns: 10, $offset: 1);
@@ -52,20 +52,20 @@
 			@include block-grid(4);
 			$per-row: 4;
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
+				@include block-grid(1); 
+			}
 			.lighter{
 				font-weight: 200;
-				font-size: 2.5em;
+				font-size: 2em;
 			}
 			h2{
-			font-size: 5em;
-			font-weight: 400
+				font-size: 4em;
+				font-weight: 400
 			}
 		}
 	}
 	.stat > li {
-	  clear: none !important;
+		clear: none !important;
 	}
 	.design_process{
 		@include grid-column($columns: 12);
@@ -77,22 +77,26 @@
 	.year{
 		@include grid-column($columns: 6, $offset: 2);
 		margin-top: rem-calc(40);
+		color: $seg-blue-color;
 
 		h2{
 			font-size: rem-calc(50);
+
 		}
 
 	}
 	.timeline{
 		
-		@include grid-column($columns: 6, $offset: 3);
+		@include grid-column($columns: 8, $offset: 2);
 		margin-top: rem-calc(30);
-		text-align: center;
-		.caption{
-			margin-bottom: rem-calc(30);
+
+		h3 {
+			padding-bottom: rem-calc(12);
 		}
+
 		p{
 			font-weight: 200;
+			padding-bottom: rem-calc(8);
 		}
 		ul{
 			@include block-grid(3);
@@ -106,14 +110,14 @@
 			@include block-grid(2);
 			$per-row: 2;
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
+				@include block-grid(1); 
+			}
 
 		}
 		.three{
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
+				@include block-grid(1); 
+			}
 		}
 
 	}
@@ -124,24 +128,28 @@
 		// padding: rem-calc(42 0);
 
 
+		
+	}
+	.about_spacer{
+		@include grid-column($columns: 6, $offset: 2);
+		padding: rem-calc(30 0);
+
 		h2 {
 			margin-bottom: rem-calc(16);
 			color: $seg-blue-color;
 		}
 	}
-	.about_spacer{
-		@include grid-column($columns: 6, $offset: 2);
-	}
 
 	.team {
 		@include grid-column($columns: 10, $offset: 1);
 		padding: rem-calc (40 0);
+		margin-bottom: rem-calc(20);
 
 		ul {
-			@include block-grid(5, rem-calc(10)); 
+			@include block-grid(5); 
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(2, rem-calc(10)); 
-		    }
+				@include block-grid(2, rem-calc(10)); 
+			}
 
 			list-style-type: none;
 		}
@@ -166,10 +174,13 @@
 	}
 	.bck_img{
 		@include grid-column($columns: 12);
-		background: url(../images/seg/site-1.jpg) no-repeat;
+		background: url(../images/seg/footer.jpg) no-repeat;
 		background-size: 100%;
 		background-position: 0% 60%;
-		margin-top: 3%;
+		margin-top: 3%;h2 {
+			margin-bottom: rem-calc(16);
+			color: $seg-blue-color;
+		}
 		.footy{
 
 			margin: 6%;
