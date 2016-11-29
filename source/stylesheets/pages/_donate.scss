@@ -1,3 +1,30 @@
 .donate {
+	.sidebar-box {
+    @include sidebar-box($columns: 3.5, $side: left);
+  }
+	.kind {
+    @include grid-column($columns: 6, $offset: 0);
+    padding: rem-calc(72 0);
+
+    h2 {
+      margin-bottom: rem-calc(16);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: rem-calc(48);
+    }
+  }
+  .donation {
+    @include grid-column($columns: 5, $offset: 1);
+    padding: rem-calc(72 0);
+
+    h2 {
+      margin-bottom: rem-calc(16);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: rem-calc(48);
+    }
+  }
 	
 }
