@@ -134,116 +134,50 @@ title: SEG
 
     <div class="team">
       <ul>
-        <li>
-          <%= image_tag "../images/seg/members/Sirietta.jpg", class: "members" %>
-          <article class="member">Sirietta Simoncini</article>
-          <article class="member_info">Advisor</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Whitney.jpg", class: "members" %>
-          <article class="member">Whitney Van Houten</article>
-          <article class="member_info"> Advisor</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Beth.jpg", class: "members" %>
-          <article class="member">Beth Burgess</article>
-          <article class="member_info">Masters of Systems Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Jai.jpg", class: "members" %>
-          <article class="member">Jai Bhagwat</article>
-          <article class="member_info">Masters of Systems Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Kaan.jpg", class: "members" %>
-          <article class="member">Kaan Nahin</article>
-          <article class="member_info">Masters of Systems Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Leslie.jpg", class: "members" %>
-          <article class="member">Leslie Munyao</article>
-          <article class="member_info">Masters of Systems Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Taneh.jpg", class: "members" %>
-          <article class="member">Taneh Worjoloh</article>
-          <article class="member_info">Masters of Systems Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Jenna.jpg", class: "members" %>
-          <article class="member">Jenna Levine</article>
-          <article class="member_info">Materials Science and Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Sarah.jpg", class: "members" %>
-          <article class="member">Sarah McDonald</article>
-          <article class="member_info">Materials Science and Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Sneha.jpg", class: "members" %>
-          <article class="member">Sneha Kabaria</article>
-          <article class="member_info">Chemical Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Ana.jpg", class: "members" %>
-          <article class="member">Ana-Moura Cook</article>
-          <article class="member_info">Civil Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Brianna.jpg", class: "members" %>
-          <article class="member">Brianna Hartner</article>
-          <article class="member_info">Civil Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Thomas.jpg", class: "members" %>
-          <article class="member">Thomas Seusser</article>
-          <article class="member_info">Civil Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Anamika.jpg", class: "members" %>
-          <article class="member">Anamika Goyal</article>
-          <article class="member_info">Architecture</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Ben.jpg", class: "members" %>
-          <article class="member">Ben Ross</article>
-          <article class="member_info">Architecture</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Daniel.jpg", class: "members" %>
-          <article class="member">Daniel Preston</article>
-          <article class="member_info">Architecture</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Isa.jpg", class: "members" %>
-          <article class="member">Isa Hübsch</article>
-          <article class="member_info">Architecture</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Nandini.jpg", class: "members" %>
-          <article class="member">Nandini Nayar</article>
-          <article class="member_info">Computer Science and Biology</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Carli.jpg", class: "members" %>
-          <article class="member">Carli Fraccarolli</article>
-          <article class="member_info">Environmental Engineering</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Becca.jpg", class: "members" %>
-          <article class="member">Becca Merenbach</article>
-          <article class="member_info">Design and Environmental Analysis</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Faith.jpg", class: "members" %>
-          <article class="member">Faith Wang</article>
-          <article class="member_info">Design and Environmental Analysis</article>
-        </li>
-        <li>
-          <%= image_tag "../images/seg/members/Isabel.jpg", class: "members" %>
-          <article class="member">Isabel Dunning</article>
-          <article class="member_info">Design and Environmental Analysis</article> 
-        </li>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Sirietta.jpg", :name => "Sirietta Simoncini",
+          :position => "Advisor" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Whitney.jpg", :name => "Whitney Van Houten",
+          :position => "Advisor" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Beth.jpg", :name => "Beth Burgess",
+          :position => "Masters of Systems Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Jai.jpg", :name => "Jai Bhagwat",
+          :position => "Masters of Systems Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Kaan.jpg", :name => "Kaan Nahin",
+          :position => "Masters of Systems Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Leslie.jpg", :name => "Leslie Munyao",
+          :position => "Masters of Systems Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Taneh.jpg", :name => "Taneh Worjoloh",
+          :position => "Masters of Systems Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Jenna.jpg", :name => "Jenna Levine",
+          :position => "Materials Science and Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Sarah.jpg", :name => "Sarah McDonald",
+          :position => "Materials Science and Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Sneha.jpg", :name => "Sneha Kabaria",
+          :position => "Chemical Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Ana.jpg", :name => "Ana-Moura Cook",
+          :position => "Civil Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Brianna.jpg", :name => "Brianna Hartner",
+          :position => "Civil Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Thomas.jpg", :name => "Thomas Seusser",
+          :position => "Civil Engineering" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Anamika.jpg", :name => "Anamika Goyal",
+          :position => "Architecture" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Ben.jpg", :name => "Ben Ross",
+          :position => "Architecture" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Daniel.jpg", :name => "Daniel Preston",
+          :position => "Architecture" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Isa.jpg", :name => "Isa Hübsch",
+          :position => "Architecture" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Nandini.jpg", :name => "Nandini Nayar",
+          :position => "Computer Science and Biology" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Carli.jpg", :name => "Carli Fraccarolli",
+          :position => "Environmental Engineering" }) %>
+           <%= partial(:'partials/teampart', :locals => { :img_name => "Becca.jpg", :name => "Becca Merenbach",
+          :position => "Design and Environmental Analysis" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Faith.jpg", :name => "Faith Wang",
+          :position => "Design and Environmental Analysis" }) %>
+          <%= partial(:'partials/teampart', :locals => { :img_name => "Isabel.jpg", :name => "Isabel Dunning",
+          :position => "Design and Environmental Analysis" }) %>
       </ul> 
     </div>
 
