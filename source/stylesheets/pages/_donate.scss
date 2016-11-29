@@ -8,6 +8,7 @@
 
     h2 {
       margin-bottom: rem-calc(16);
+      color: $seg-blue-color;
     }
 
     p:not(:last-child) {
@@ -20,11 +21,20 @@
 
     h2 {
       margin-bottom: rem-calc(16);
+      color: $seg-blue-color;
     }
 
     p:not(:last-child) {
-      margin-bottom: rem-calc(48);
+      margin-bottom:1rem rem-calc(48);
     }
   }
+  .button{
+  	@include grid-column($columns: 4, $offset: 4);
+  }
+  .photo-strip__text h1, .photo-strip__text h2 {
+    margin: 0;
+    color: #000000;
+    text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
+}
 	
 }
