@@ -2,7 +2,7 @@
 
 	.seg_logo {
 		@include grid-column($columns: 4, $offset: 2);
-		width: rem-calc(300);
+		width: rem-calc(340);
 	}
 	.design_build{
 		margin-top: rem-calc(75);
@@ -15,35 +15,35 @@
 			font-weight: 200;
 		}
 		li{
-			margin-top: rem-calc(75);
+			margin-top: rem-calc(70);
 
 		}
 		// @media screen and (min-width: $large-breakpoint){
-     		.ul_spacer{
+			.ul_spacer{
 				padding: 0 23%;
 			}
 	    // }
-		
-		ul{
-			@include block-grid(3);
-			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
-			$per-row: 3;
+
+	    ul{
+	    	@include block-grid(3);
+	    	@media screen and (max-width: $small-breakpoint){
+	    		@include block-grid(1); 
+	    	}
+	    	$per-row: 3;
 			// $spacing: $block-grid-default-spacing; 
 
 			.lighter{
 				font-weight: 200;
-				font-size: 3em;
+				font-size: rem-calc(28);
 			}
 			h2{
-			font-size: 5em;
-			font-weight: 400
-		}
+				font-size: 4em;
+				font-weight: 400
+			}
 		}
 	}
 	.cusd_vam > li {
-	  clear: none !important;
+		clear: none !important;
 	}
 	.stat{
 		@include grid-column($columns: 10, $offset: 1);
@@ -52,54 +52,56 @@
 			@include block-grid(4);
 			$per-row: 4;
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(1); 
-		    }
+				@include block-grid(1); 
+			}
 			.lighter{
 				font-weight: 200;
-				font-size: 2.5em;
+				font-size: rem-calc(28);
 			}
 			h2{
-			font-size: 5em;
-			font-weight: 400
+				font-size: 4em;
+				font-weight: 400
 			}
 		}
 	}
 	.stat > li {
-	  clear: none !important;
+		clear: none !important;
 	}
 	.design_process{
 		@include grid-column($columns: 12);
-		// padding: rem-calc(42 0);
+		padding-bottom: rem-calc(30);
 
-	}
-	.year{
-		@include grid-column($columns: 6, $offset: 2);
-		margin-top: rem-calc(40);
-
-		h2{
-			font-size: rem-calc(50);
+		&_spacer {
+			padding-top: rem-calc(20);
 		}
 
 	}
-	.timeline{
-		
-		@include grid-column($columns: 6, $offset: 3);
-		margin-top: rem-calc(30);
-		text-align: center;
-		.caption{
-			margin-bottom: rem-calc(30);
+
+
+	.year {
+		@include grid-column($columns:2, $offset:2);
+		color: $seg-blue-color;
+	}
+
+	.timeline {
+		@include grid-column($columns:8, $offset:2);
+		padding: rem-calc(20 0);
+
+		h3 {
+			padding: rem-calc(12 0);
 		}
-		p{
-			font-weight: 200;
-		}
-		ul{
+
+		.three {
 			@include block-grid(3);
 			$per-row: 3;
-			// @media screen and (max-width: $small-breakpoint){
-	  //    		@include block-grid(1); 
-		 //    }
 		}
+	}
 
+
+	.two {
+		@include block-grid(2);
+		$per-row: 2;
+		margin:0;
 	}
 
 
@@ -112,6 +114,10 @@
 			margin-bottom: rem-calc(16);
 			color: $seg-blue-color;
 		}
+
+		p {
+			padding-bottom: rem-calc(12);
+		}
 	}
 
 	.team {
@@ -121,12 +127,13 @@
 		ul {
 			@include block-grid(5, rem-calc(10)); 
 			@media screen and (max-width: $small-breakpoint){
-	     		@include block-grid(2, rem-calc(10)); 
-		    }
+				@include block-grid(2, rem-calc(10)); 
+			}
 
 			list-style-type: none;
 		}
 	}
+
 
 	.members {
 		height: rem-calc(150);
@@ -145,6 +152,4 @@
 		line-height: rem-calc(18);
 		margin-top: rem-calc(-2);
 	}
-
-
 }
