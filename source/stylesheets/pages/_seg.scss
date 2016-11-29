@@ -176,10 +176,11 @@
 		
 		
 		h2{
-			margin-top: rem-calc(100);
+			margin-top: rem-calc(40);
 			@include grid-column($columns:6, $offset:3);
 			text-align: center;
-			margin-bottom: rem-calc(70);
+			margin-bottom: rem-calc(50);
+
 		}
 	}
 	.iframer {
