@@ -1,19 +1,54 @@
 .seg {
 
-.seg_logo {
-	 @include grid-column($columns: 4, $offset: 2);
-}
+	.seg_logo {
+		@include grid-column($columns: 4, $offset: 2);
+	}
 
-.about {
-	@include grid-column($columns: 6, $offset: 2);
-	padding: rem-calc(42 0);
+	.about {
+		@include grid-column($columns: 6, $offset: 2);
+		padding: rem-calc(42 0);
 
 
-	h2 {
-		margin-bottom: rem-calc(16);
-		color: $seg-blue-color;
-}
-}
+		h2 {
+			margin-bottom: rem-calc(16);
+			color: $seg-blue-color;
+		}
+	}
+
+	.team {
+		@include grid-column($columns: 10, $offset: 1);
+		padding: rem-calc (40 0);
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			float: left;
+			display: block;
+			margin: rem-calc(4 10);
+		}
+	}
+
+	.members {
+		margin: 0 auto;
+		height: rem-calc(150);
+		width: rem-calc(150);
+	}
+
+	.member { 
+		margin:0;
+		padding-top: rem-calc(4);
+		font-weight: 400;
+		font-size: rem-calc(17);
+	}
+
+	.member_info{
+		font-size: rem-calc(15);
+		font-weight: 300;
+		line-height: rem-calc(18);
+		margin-top: rem-calc(-2);
+	}
 
 
 }
