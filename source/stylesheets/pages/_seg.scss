@@ -69,7 +69,10 @@
 	}
 	.design_process{
 		@include grid-column($columns: 12);
-
+		// padding: rem-calc(42 0);
+	}
+	.directors{
+		@include grid-column($columns: 12);
 	}
 	.year{
 		@include grid-column($columns: 6, $offset: 2);
@@ -99,18 +102,35 @@
 		 //    }
 		}
 
+		.two{
+			@include block-grid(2);
+			$per-row: 2;
+			@media screen and (max-width: $small-breakpoint){
+	     		@include block-grid(1); 
+		    }
+
+		}
+		.three{
+			@media screen and (max-width: $small-breakpoint){
+	     		@include block-grid(1); 
+		    }
+		}
+
 	}
 
 
 	.about {
-		@include grid-column($columns: 6, $offset: 2);
-		padding: rem-calc(42 0);
+		@include grid-column($columns: 12);
+		// padding: rem-calc(42 0);
 
 
 		h2 {
 			margin-bottom: rem-calc(16);
 			color: $seg-blue-color;
 		}
+	}
+	.about_spacer{
+		@include grid-column($columns: 6, $offset: 2);
 	}
 
 	.team {
