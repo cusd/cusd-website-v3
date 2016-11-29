@@ -41,8 +41,64 @@
 			font-weight: 400
 		}
 		}
+	}
+	.cusd_vam > li {
+	  clear: none !important;
+	}
+	.stat{
+		@include grid-column($columns: 10, $offset: 1);
+		padding: rem-calc(42 0);
+		ul{
+			@include block-grid(4);
+			$per-row: 4;
+			@media screen and (max-width: $small-breakpoint){
+	     		@include block-grid(1); 
+		    }
+			.lighter{
+				font-weight: 200;
+				font-size: 2.5em;
+			}
+			h2{
+			font-size: 5em;
+			font-weight: 400
+			}
+		}
+	}
+	.stat > li {
+	  clear: none !important;
+	}
+	.design_process{
+		@include grid-column($columns: 12);
+		// padding: rem-calc(42 0);
 
+	}
+	.year{
+		@include grid-column($columns: 6, $offset: 2);
+		margin-top: rem-calc(40);
+
+		h2{
+			font-size: rem-calc(50);
+		}
+
+	}
+	.timeline{
 		
+		@include grid-column($columns: 6, $offset: 3);
+		margin-top: rem-calc(30);
+		text-align: center;
+		.caption{
+			margin-bottom: rem-calc(30);
+		}
+		p{
+			font-weight: 200;
+		}
+		ul{
+			@include block-grid(3);
+			$per-row: 3;
+			// @media screen and (max-width: $small-breakpoint){
+	  //    		@include block-grid(1); 
+		 //    }
+		}
 
 	}
 
