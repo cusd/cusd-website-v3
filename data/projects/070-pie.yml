@@ -1,19 +1,19 @@
 name: PIE
 logo: project-logos/pie.svg
 color: "#56c77b"
-tagline: Project Identification + Expansion
-hero_image: "project-photos/bus-hero.jpg"
-lede: "Changing the face of the TCAT bus system"
+tagline: Identifying the next big CUSD project
+hero_image: "project-photos/pie-hero.jpg"
+lede: "Project Identification + Expansion"
 description:
-  "<p> The Bus Shelter Renovations team is focused on rethinking the impact of TCAT bus shelters in the Ithaca community. We are partnering with the TCAT organization and the City of Ithaca Planning Board to figure out the best design for new shelters around the Ithaca community. 
-The majority of our decisions will come from a design thinking process that is anchored in three main methods of data collection and analysis: inspiration, observation, and emersion. The goal is to use this data to make informed decisions that would account for the local citizens’ opinions. After pitching our initial designs to our stakeholders, we will proceed to develop a prototype sight (or scaled down model) to begin the process of redeveloping the bus shelters around Ithaca. We are looking to incorporate our designs to work with the comprehensive plans of the City of Ithaca and the Downtown Alliance’s plan for the year 2020.
+  "<p> Project Identification and Expansion (PIE) is tasked with developing, expanding, and sustaining CUSD’s mission. Members of PIE are the liaison between new projects and CUSD. They target companies, NGO’s, and groups that align with CUSD’s mission of making a more sustainable world through design. 
+  PIE searches for projects in the Ithaca community, domestically, and internationally.
 </p>"
 photos:
-  - url: project-photos/bus-1.jpg
+  - url: project-photos/pie-1.jpg
     des: 
-  - url: project-photos/bus-2.jpg
+  - url: project-photos/pie-2.jpg
     des:
-  - url: project-photos/bus-3.jpg
+  - url: project-photos/pie-3.jpg
     des:
 impact:
   stats:
