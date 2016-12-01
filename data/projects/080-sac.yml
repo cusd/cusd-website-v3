@@ -1,19 +1,19 @@
 name: SAC
-logo: project-logos/pie.svg
-color: "#56c77b"
-tagline: Identifying the next big CUSD project
-hero_image: "project-photos/pie-hero.jpg"
+logo: project-logos/sac.svg
+color: "#C4BD3B"
+tagline: Solar Automated Composter
+hero_image: "project-photos/sac-hero.jpg"
 lede: "Solar Automated Composter"
 description:
   "<p> Solar Automated Composter is a team of five engineers striving to promote sustainability at the Ithaca High School through the fabrication of a solar automatic composter. Ithaca High School currently tries to compost through Cayuga Compost, but there is a fundamental disconnect on how to properly compost, thus the majority of their compost ends up in the trash because of impurity. They aim to make composting simple and easy for the students by being able to make it in their back yard with 21st-century technology. 
   They are redesigning the traditional “tumbling composter” by making it run on solar technology and turns itself automatically.
 </p>"
 photos:
-  - url: project-photos/pie-1.jpg
+  - url: project-photos/sac-1.jpg
     des: 
-  - url: project-photos/pie-2.jpg
+  - url: project-photos/sac-2.jpg
     des:
-  - url: project-photos/pie-3.jpg
+  - url: project-photos/sac-3.jpg
     des:
 impact:
   stats:
