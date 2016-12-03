@@ -1,0 +1,19 @@
+.footer-donate{
+		@include grid-row();
+		display: flex;
+		background:url(../images/seg/footer.jpg) no-repeat;
+		margin:0;
+		min-height: rem-calc(270);
+	}
+
+	.footer_text{
+		@include grid-column($columns:6, $offset:3);
+		padding-top: rem-calc(60);
+		color: white;
+		text-align: center;
+	}
+
+	// .button {
+	// 	@include grid-column($columns:1.5, $offset:5.25);
+	// 	display: block;
+	// }

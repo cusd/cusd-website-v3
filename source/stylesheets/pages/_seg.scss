@@ -166,12 +166,9 @@
 
 
 	.frame_wrap{
-		iframe{
-			@include grid-column($columns:5, $offset:3.5);
-			@media screen and (max-width: $small-breakpoint){
-				@include grid-column($columns:6);
-			}
-		}
+		// iframe{
+		
+		// }
 
 		
 		
@@ -183,9 +180,18 @@
 
 		}
 	}
+	.framey{
+		@include grid-column($columns:5, $offset:3.5);
+		@media screen and (max-width: $small-breakpoint){
+			width: rem-calc(400);
+			padding: 0 rem-calc(30);
+			margin-left: 0 !important;
+		}
+		
+	}
 	.iframer {
 		// @include grid-column($columns:9, $offset:3);
-		padding: rem-calc(50 0 10 0);
+		// padding: rem-calc(50 0 10 0);
 		// margin-left: rem-calc(200);
 	}
 
@@ -226,7 +232,7 @@
 
 		&_text {
 			@include grid-column($columns: 8, $offset: .5);
-
+			padding-right: rem-calc(30);
 			h3 {
 				padding-bottom: rem-calc(5);
 			}
@@ -236,12 +242,57 @@
 			}
 		}
 	}
+	.wrappy{
+		// background-color: red;
+		margin-top: rem-calc(30);
+		@include grid-column($columns: 6);
+		@media screen and (max-width: $small-breakpoint){
+			@include grid-column($columns: 12);
+		}
+		padding: 0 rem-calc(40);
 
+	}
+	.team_vam{
+		@include grid-column($columns: 11, $offset: .5);
+	}
+	.vamer{
+		color: white;
+		background-color: #377898;
+		margin-top: rem-calc(30);
+		@include grid-column($columns: 6);
+		@media screen and (max-width: $small-breakpoint){
+		@include grid-column($columns: 12);
+			padding: 0 rem-calc(40);
+			margin-top: rem-calc(40);
+		}
+		p{
+			margin-top: rem-calc(40);
+		}
+		h2{
+			color: white;
+			text-align: center;
+		}
+		a{
+			color: #ffc494;
+		}
+		padding: 0 rem-calc(40);
+		padding-bottom: rem-calc(359);
+	}
 	.lead {
-		float: left;
+		margin-top: rem-calc(40);
+		@include grid-column($columns: 12);
+
+		@media screen and (max-width: $small-breakpoint){
+				@include grid-column($columns: 12);
+				padding: 0 rem-calc(40);
+			}
+
 		padding-bottom: rem-calc(20);
 	}
 
+	// .vam{
+	// 	@include grid-column($columns: 6);
+	// }
 	.img_aligner_email{
 		vertical-align: middle;
 		margin-bottom: 0.20em;
