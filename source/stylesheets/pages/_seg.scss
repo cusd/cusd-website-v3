@@ -313,7 +313,9 @@
 		@include grid-column($columns: 10, $offset: 1);
 		padding: rem-calc (40 0);
 		margin-bottom: rem-calc(20);
-
+		h2{
+			margin: rem-calc(50) 0;
+		}
 		ul {
 			@include block-grid(5); 
 			@media screen and (max-width: $small-breakpoint){
@@ -323,6 +325,7 @@
 			list-style-type: none;
 		}
 	}
+
 
 	.members {
 		height: rem-calc(150);
