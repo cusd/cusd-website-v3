@@ -245,38 +245,52 @@
 	.wrappy{
 		// background-color: red;
 		margin-top: rem-calc(30);
-		@include grid-column($columns: 6);
+		@include grid-column($columns: 6.5, $offset: .5);
 		@media screen and (max-width: $small-breakpoint){
 			@include grid-column($columns: 12);
 		}
 		padding: 0 rem-calc(40);
+		h2{
+			font-size: rem-calc(38);
+		}
 
 	}
 	.team_vam{
-		@include grid-column($columns: 11, $offset: .5);
+		@include grid-column($columns: 12);
 	}
 	.vamer{
 		color: white;
 		background-color: #377898;
-		margin-top: rem-calc(30);
-		@include grid-column($columns: 6);
+		// margin-top: rem-calc(30);
+		@include grid-column($columns: 5);
 		@media screen and (max-width: $small-breakpoint){
 		@include grid-column($columns: 12);
 			padding: 0 rem-calc(40);
 			margin-top: rem-calc(40);
+			padding-bottom: rem-calc(50);
 		}
 		p{
-			margin-top: rem-calc(40);
+			margin-top: rem-calc(10);
+			padding-top: rem-calc(40);
+			padding-left: rem-calc(40);
+			padding-right: rem-calc(40);
 		}
 		h2{
+			margin-top: rem-calc(20);
 			color: white;
 			text-align: center;
+			font-size: rem-calc(38);
 		}
 		a{
 			color: #ffc494;
+			font-weight: 300;
+			font-size: rem-calc(20);
+			padding-left: rem-calc(40);
+			// margin-bottom: rem-calc(40);
+			// padding: rem-calc(30);
 		}
-		padding: 0 rem-calc(40);
-		padding-bottom: rem-calc(359);
+		padding: 0 rem-calc(50);
+		padding-bottom: rem-calc(150);
 	}
 	.lead {
 		margin-top: rem-calc(40);
