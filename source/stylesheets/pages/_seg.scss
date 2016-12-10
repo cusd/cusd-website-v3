@@ -232,7 +232,7 @@
 
 		&_text {
 			@include grid-column($columns: 8, $offset: .5);
-			padding-right: rem-calc(30);
+			// padding-right: rem-calc(30);
 			h3 {
 				padding-bottom: rem-calc(5);
 			}
@@ -245,12 +245,14 @@
 	.wrappy{
 		// background-color: red;
 		margin-top: rem-calc(30);
+		// margin:rem-calc(20);
 		@include grid-column($columns: 6.5, $offset: .5);
 		@media screen and (max-width: $small-breakpoint){
 			@include grid-column($columns: 12);
 		}
 		padding: 0 rem-calc(40);
 		h2{
+			margin-left: rem-calc(15);
 			font-size: rem-calc(38);
 		}
 
@@ -276,7 +278,7 @@
 			padding-right: rem-calc(40);
 		}
 		h2{
-			margin-top: rem-calc(20);
+			margin-top: rem-calc(35);
 			color: white;
 			text-align: center;
 			font-size: rem-calc(38);
@@ -284,7 +286,7 @@
 		a{
 			color: #ffc494;
 			font-weight: 300;
-			font-size: rem-calc(20);
+			font-size: rem-calc(18);
 			padding-left: rem-calc(40);
 			// margin-bottom: rem-calc(40);
 			// padding: rem-calc(30);
@@ -292,16 +294,22 @@
 		padding: 0 rem-calc(50);
 		padding-bottom: rem-calc(150);
 	}
-	.lead {
-		margin-top: rem-calc(40);
+	.claudia {
+		// margin-top: rem-calc(40);
+		margin:rem-calc(20);
 		@include grid-column($columns: 12);
 
 		@media screen and (max-width: $small-breakpoint){
 				@include grid-column($columns: 12);
 				padding: 0 rem-calc(40);
 			}
+		margin-top: rem-calc(40);
 
-		padding-bottom: rem-calc(20);
+		// padding-bottom: rem-calc(20);
+	}
+	.arielle{
+		@extend .claudia;
+		margin-top: rem-calc(20);
 	}
 
 	// .vam{
