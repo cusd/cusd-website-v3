@@ -1,5 +1,4 @@
 .seg {
-
 	.seg_logo {
 		@include grid-column($columns: 4, $offset: .7);
 		width: rem-calc(340);
@@ -111,9 +110,6 @@
 		ul{
 			@include block-grid(3);
 			$per-row: 3;
-			// @media screen and (max-width: $small-breakpoint){
-	  //    		@include block-grid(1); 
-		 //    }
 		}
 
 		.two{
@@ -134,12 +130,9 @@
 
 
 	.about {
-		@include grid-column($columns: 12);
-		// padding: rem-calc(42 0);
-
-
-		
+		@include grid-column($columns: 12);	
 	}
+
 	.about_spacer{
 		@include grid-column($columns: 6, $offset: 2);
 		padding: rem-calc(30 0);
@@ -166,12 +159,6 @@
 
 
 	.frame_wrap{
-		// iframe{
-		
-		// }
-
-		
-		
 		h2{
 			margin-top: rem-calc(40);
 			@include grid-column($columns:6, $offset:3);
@@ -189,11 +176,11 @@
 		}
 		
 	}
-	.iframer {
+	// .iframer {
 		// @include grid-column($columns:9, $offset:3);
 		// padding: rem-calc(50 0 10 0);
 		// margin-left: rem-calc(200);
-	}
+	// }
 
 	.vam_text {
 		@include grid-column($columns: 5, $offset: .5);
@@ -243,9 +230,7 @@
 		}
 	}
 	.wrappy{
-		// background-color: red;
 		margin-top: rem-calc(30);
-		// margin:rem-calc(20);
 		@include grid-column($columns: 6.5, $offset: .5);
 		@media screen and (max-width: $small-breakpoint){
 			@include grid-column($columns: 12);
@@ -255,7 +240,6 @@
 			margin-left: rem-calc(15);
 			font-size: rem-calc(38);
 		}
-
 	}
 	.team_vam{
 		@include grid-column($columns: 12);
@@ -263,7 +247,6 @@
 	.vamer{
 		color: white;
 		background-color: #377898;
-		// margin-top: rem-calc(30);
 		@include grid-column($columns: 5);
 		@media screen and (max-width: $small-breakpoint){
 		@include grid-column($columns: 12);
@@ -273,7 +256,7 @@
 		}
 		p{
 			margin-top: rem-calc(10);
-			padding-top: rem-calc(40);
+			padding-top: rem-calc(20);
 			padding-left: rem-calc(40);
 			padding-right: rem-calc(40);
 		}
@@ -288,14 +271,11 @@
 			font-weight: 300;
 			font-size: rem-calc(18);
 			padding-left: rem-calc(40);
-			// margin-bottom: rem-calc(40);
-			// padding: rem-calc(30);
 		}
 		padding: 0 rem-calc(50);
-		padding-bottom: rem-calc(150);
+		padding-bottom: rem-calc(140);
 	}
 	.claudia {
-		// margin-top: rem-calc(40);
 		margin:rem-calc(20);
 		@include grid-column($columns: 12);
 
@@ -304,17 +284,12 @@
 				padding: 0 rem-calc(40);
 			}
 		margin-top: rem-calc(40);
-
-		// padding-bottom: rem-calc(20);
 	}
 	.arielle{
 		@extend .claudia;
 		margin-top: rem-calc(20);
 	}
 
-	// .vam{
-	// 	@include grid-column($columns: 6);
-	// }
 	.img_aligner_email{
 		vertical-align: middle;
 		margin-bottom: 0.20em;
@@ -332,7 +307,7 @@
 	}
 
 	.team {
-		@include grid-column($columns: 10, $offset: 1);
+		@include grid-column($columns: 11.5, $offset: .5);
 		padding: rem-calc (40 0);
 		margin-bottom: rem-calc(20);
 		h2{
