@@ -257,8 +257,8 @@
 		p{
 			margin-top: rem-calc(10);
 			padding-top: rem-calc(20);
-			padding-left: rem-calc(40);
-			padding-right: rem-calc(40);
+			padding-left: rem-calc(14);
+			padding-right: rem-calc(14);
 		}
 		h2{
 			margin-top: rem-calc(35);
@@ -270,10 +270,10 @@
 			color: #ffc494;
 			font-weight: 300;
 			font-size: rem-calc(18);
-			padding-left: rem-calc(40);
+			padding-left: rem-calc(14);
 		}
 		padding: 0 rem-calc(50);
-		padding-bottom: rem-calc(140);
+		padding-bottom: rem-calc(118);
 	}
 	.claudia {
 		margin:rem-calc(20);
@@ -357,6 +357,10 @@
 			// min-height: rem-calc(260);
 			// margin-top: rem-calc(100);
 
+			@media screen and (max-width: $small-breakpoint){
+				@include grid-column($columns: 10, $offset: 1);
+			}
+
 			.mini{
 				margin-top: rem-calc(10);
 				width: 30%;
@@ -367,16 +371,16 @@
 				}
 			}
 			h4{
-				margin: rem-calc(60);
+				margin: rem-calc(50);
 				margin-bottom: rem-calc(15);
 				@media screen and (max-width: $small-breakpoint){
 					margin:0;
-					margin-top: rem-calc(30);
+					margin-top: rem-calc(20);
 					font-size: rem-calc(15);
 				}
 				@media screen and (max-width: $medium-breakpoint){
 					margin:0;
-					margin-top: rem-calc(40);
+					margin-top: rem-calc(30);
 				}
 
 				// padding-top: rem-calc(50);
