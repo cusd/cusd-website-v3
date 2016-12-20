@@ -51,7 +51,7 @@
 
   @media #{$medium-up} {
     display: block;
-    @include grid-column($columns:7, $offset:0);
+    @include grid-column($columns:8, $offset:.5);
   }
 
   @media #{$large-up} {

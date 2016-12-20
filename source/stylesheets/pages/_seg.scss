@@ -310,6 +310,10 @@
 		@include grid-column($columns: 11.5, $offset: .5);
 		padding: rem-calc (40 0);
 		margin-bottom: rem-calc(20);
+
+		@media screen and (max-width: $medium-breakpoint){
+			@include grid-column($columns: 11, $offset: .5);
+		}
 		h2{
 			margin: rem-calc(50) 0;
 		}
@@ -356,6 +360,10 @@
 			text-align: center;
 			// min-height: rem-calc(260);
 			// margin-top: rem-calc(100);
+
+			@media screen and (max-width: $medium-breakpoint){
+				@include grid-column($columns: 8, $offset: 2);
+			}
 
 			@media screen and (max-width: $small-breakpoint){
 				@include grid-column($columns: 10, $offset: 1);

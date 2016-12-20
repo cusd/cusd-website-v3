@@ -7,7 +7,8 @@
   min-height: rem-calc(165);
 
 @media #{$small-only} {
-  background-position: center bottom;
+  background-position: center center;
+  background-size: cover;
 }
 
 

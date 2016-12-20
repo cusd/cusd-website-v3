@@ -8,9 +8,9 @@
 
   .photo-strip__text {
   	@include grid-column($columns: 12, $float: middle);
-	}	
+  }	
 
-	h1 {
+  h1 {
     font-size: rem-calc(64);
     text-align: center;
     @media #{$small-only} {font-size: rem-calc(38);
@@ -18,81 +18,88 @@
     }
   }
 
- 	h1 ~ h2 {
- 		font-size: rem-calc(32);
+  h1 ~ h2 {
+   font-size: rem-calc(32);
+   text-align: center;
+   @media #{$small-only} {font-size: rem-calc(24);
+    padding-left: 2%;
+  }
+}
+
+.team-text {
+ @include grid-column($columns: 5);
+ padding: rem-calc(70 0 72);
+
+ h2 {
+  margin-bottom: rem-calc(24);
+}
+
+@media #{$medium-only} {
+  padding-left: 4%;
+}
+
+@media #{$small-only} {
+  padding: rem-calc(46 0 0);
+  padding-left: 4%;
+  p, a {
+    display: none;
+  }
+}
+}
+
+.team-graphic {
+  @include grid-column($columns: 4, $offset: 2);
+  padding: rem-calc(72 0);
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media #{$small-only} {
+    padding: rem-calc(52 0);
+  }
+}
+
+.mobile-text{
+  @include grid-column($columns: 11, $offset: 0.5);
+  padding: rem-calc(28 0 20);
+
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.timeline-row {
+  @include grid-row();
+  overflow: visible;
+  padding: rem-calc(0 15)
+}
+
+.timeline-label {
+  @include grid-column($columns: 8);
+  margin: rem-calc(72 0);
+
+  @media screen and (max-width: $small-breakpoint){
+    width: 100%;
     text-align: center;
-    @media #{$small-only} {font-size: rem-calc(24);
-      padding-left: 2%;
-    }
- 	}
-
-  .team-text {
-  	@include grid-column($columns: 5);
-  	padding: rem-calc(70 0 72);
-
-    h2 {
-      margin-bottom: rem-calc(24);
-    }
-
-    @media #{$small-only} {
-    padding: rem-calc(46 0 0);
-    padding-left: 4%;
-    p, a {
-      display: none;
-    }
-    }
+    margin: rem-calc(20 0);
   }
+}
 
-  .team-graphic {
-    @include grid-column($columns: 4, $offset: 2);
-    padding: rem-calc(72 0);
-
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    @media #{$small-only} {
-      padding: rem-calc(52 0);
-    }
-  }
-
-  .mobile-text{
-    @include grid-column($columns: 11, $offset: 0.5);
-   padding: rem-calc(28 0 20);
-
-    @media #{$medium-up} {
-      display: none;
-    }
-  }
-
-  .timeline-row {
-    @include grid-row();
-    overflow: visible;
-    padding: rem-calc(0 15)
-  }
-
-  .timeline-label {
-    @include grid-column($columns: 8);
-    margin: rem-calc(72 0);
-
-    @media screen and (max-width: $small-breakpoint){
-      width: 100%;
-      text-align: center;
-      margin: rem-calc(20 0);
-    }
-  }
-
-  .timeline {
-    height: rem-calc(24);
-    margin: rem-calc(250 0 280);
-    width: calc(92%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to bottom, $white 45%, $mid-gray 45%, $mid-gray 55%, $white 55%);
+.timeline {
+  height: rem-calc(24);
+  margin: rem-calc(250 0 280);
+  width: calc(92%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, $white 45%, $mid-gray 45%, $mid-gray 55%, $white 55%);
     box-shadow: inset -2px 0 0 0 $white; // Fix flexbox rendering issue that causes line to extend past last point
 
+ @media screen and (max-width: $medium-breakpoint){
+  margin: rem-calc(250 0 200);
+}
     @media screen and (max-width: $small-breakpoint){
       display:none;
     }
@@ -125,12 +132,27 @@
           line-height: rem-calc(20);
         }
 
+        .now__button {
+           @media #{$medium-only} {
+            display: none;
+        }
+      }
+
         .button {
           right: 12%;
         }
       }
     }
   }
+}
+
+.medium__button {
+  display: none;
+  @media #{$medium-only} {
+  @include grid-column($columns:4, $offset:4);
+  display: block;
+  margin-bottom: rem-calc(30);
+}
 }
 
 #responsive-link {

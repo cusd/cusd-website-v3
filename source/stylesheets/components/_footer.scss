@@ -27,6 +27,11 @@
       font-weight: $font-weight-light;
     }
 
+    @media #{$medium-only} {
+      @include grid-column($columns:5, $offset: .5);
+      padding-left: rem-calc(12);
+    }
+
     @media #{$small-only} {
       @include grid-column($columns:5);
       padding-left: rem-calc(12);
