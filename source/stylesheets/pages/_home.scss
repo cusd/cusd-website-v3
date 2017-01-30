@@ -6,6 +6,14 @@
     }
   }
 
+  .sidebar-strip {
+    background: linear-gradient(to right, $mantis-tint 50%, $mantis-tint 50%);
+    margin-top: rem-calc(300);
+    @media#{$small-only} {
+      max-height: rem-calc(140);
+    }
+  }
+
   .photo-strip__text {
   	@include grid-column($columns: 12, $float: middle);
   }	
@@ -23,6 +31,31 @@
    text-align: center;
    @media #{$small-only} {font-size: rem-calc(24);
     padding-left: 2%;
+  }
+}
+
+.info-session {
+  @include grid-column($columns: 8, $offset: 2);
+  padding: rem-calc(40 0 0);
+  @media #{$small-only} {
+    padding: rem-calc(6 0 0);
+  }
+
+  h2 {
+    @include grid-column($columns:8);
+    padding-bottom: 30%;
+    @media #{$small-only} {
+      @include grid-column($columns:11);
+      padding-bottom: 10%;
+    }
+  }
+
+  h3 {
+    padding: rem-calc(17 0 10);
+  }
+
+  .unbold {
+    font-weight: 200;
   }
 }
 
@@ -73,12 +106,15 @@
 .timeline-row {
   @include grid-row();
   overflow: visible;
-  padding: rem-calc(0 15)
+  padding: rem-calc(0 15);
+  @media #{$small-only} {
+    width: 95%;
+  }
 }
 
 .timeline-label {
   @include grid-column($columns: 8);
-  margin: rem-calc(72 0);
+  margin: rem-calc(72 0); /*72 0 w/o info sesh */
 
   @media screen and (max-width: $small-breakpoint){
     width: 100%;
@@ -97,9 +133,9 @@
   background: linear-gradient(to bottom, $white 45%, $mid-gray 45%, $mid-gray 55%, $white 55%);
     box-shadow: inset -2px 0 0 0 $white; // Fix flexbox rendering issue that causes line to extend past last point
 
- @media screen and (max-width: $medium-breakpoint){
-  margin: rem-calc(250 0 200);
-}
+    @media screen and (max-width: $medium-breakpoint){
+      margin: rem-calc(250 0 200);
+    }
     @media screen and (max-width: $small-breakpoint){
       display:none;
     }
@@ -133,26 +169,26 @@
         }
 
         .now__button {
-           @media #{$medium-only} {
-            display: none;
+         @media #{$medium-only} {
+          display: none;
         }
       }
 
-        .button {
-          right: 12%;
-        }
+      .button {
+        right: 12%;
       }
     }
   }
+}
 }
 
 .medium__button {
   display: none;
   @media #{$medium-only} {
-  @include grid-column($columns:4, $offset:4);
-  display: block;
-  margin-bottom: rem-calc(30);
-}
+    @include grid-column($columns:4, $offset:4);
+    display: block;
+    margin-bottom: rem-calc(30);
+  }
 }
 
 #responsive-link {
