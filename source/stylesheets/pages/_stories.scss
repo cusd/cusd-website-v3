@@ -1,0 +1,80 @@
+.stories{
+	.quote{
+	  @include grid-column($columns: 4);
+	  @media screen and (max-width: $medium-breakpoint){
+	      display: none;
+	      
+	    }
+	  padding:7%;
+	  background-color: #D3D3D3;
+	  h3{
+	  	font-weight: bold;
+	  }
+	}
+	.latestStory{
+		@include grid-column($columns: 8);
+		@media screen and (max-width: $medium-breakpoint){
+		   @include grid-column($columns: 11 , $offset: .5);
+		   text-align: center;
+
+	    }
+
+		padding: 6%;
+		h5{
+			padding-top: 1rem;
+			font-weight: lighter;
+		}
+	}
+	.membersPOV{
+		@include grid-column($columns: 10, $offset: 1.25);
+		padding-top:5%;
+		@media screen and (max-width: $small-breakpoint){
+	      h2{
+	      	text-align: center;
+	      }
+	    }
+
+		// padding: 3%;
+
+
+	}
+	.membersGrid{
+		// idk this is most aligned with the footer
+		@include grid-column($columns: 10, $offset: 1.25);
+		@media screen and (max-width: $small-breakpoint){
+	      @include grid-column($columns: 12);
+	    }
+		margin-top: 3%;
+	}
+	.instaGrid{
+		@include block-grid(3);
+		@media screen and (max-width: $small-breakpoint){
+	      @include block-grid(1);
+	    }
+		li{
+		@media screen and (max-width: $small-breakpoint){
+	     margin: 5%;
+	    }
+		
+			list-style-type: none;
+			img{
+				width: 350px;
+				height: 350px;
+				margin: 0 auto;
+			}
+			p{
+				margin-top: 10px;
+				width: 80%;
+				font-weight: 500;
+			}
+			.author{
+				font-weight: bold;
+			}
+			.photoSource{
+				font-weight: 400;
+				color: #A8A8A8;
+
+			}
+		}
+	}
+}
