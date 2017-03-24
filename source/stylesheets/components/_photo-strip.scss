@@ -6,10 +6,10 @@
   padding: rem-calc(72 10);
   min-height: rem-calc(165);
 
-@media #{$small-only} {
-  background-position: center center;
-  background-size: cover;
-}
+  @media #{$small-only} {
+    background-position: center center;
+    background-size: cover;
+  }
 
 
   &__text {
@@ -39,6 +39,15 @@
 
   &--page-header {
     min-height: 0;
+    background-position: center 100%;
+
+    h1 {
+      line-height: 1;
+    }
+  }
+
+  &--connect-header {
+    min-height: rem-calc(280);
     background-position: center 100%;
 
     h1 {

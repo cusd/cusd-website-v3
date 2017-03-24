@@ -1,23 +1,23 @@
 .stories{
 	.quote{
-	  @include grid-column($columns: 4);
-	  @media screen and (max-width: $medium-breakpoint){
-	      display: none;
-	      
-	    }
-	  padding:7%;
-	  background-color: #D3D3D3;
-	  h3{
-	  	font-weight: bold;
-	  }
+		@include grid-column($columns: 4);
+		@media screen and (max-width: $medium-breakpoint){
+			display: none;
+			
+		}
+		padding:7%;
+		background-color: #D3D3D3;
+		h3{
+			font-weight: bold;
+		}
 	}
 	.latestStory{
 		@include grid-column($columns: 8);
 		@media screen and (max-width: $medium-breakpoint){
-		   @include grid-column($columns: 11 , $offset: .5);
-		   text-align: center;
+			@include grid-column($columns: 11 , $offset: .5);
+			text-align: center;
 
-	    }
+		}
 
 		padding: 6%;
 		h5{
@@ -29,10 +29,10 @@
 		@include grid-column($columns: 10, $offset: 1.25);
 		padding-top:5%;
 		@media screen and (max-width: $small-breakpoint){
-	      h2{
-	      	text-align: center;
-	      }
-	    }
+			h2{
+				text-align: center;
+			}
+		}
 
 		// padding: 3%;
 
@@ -42,20 +42,20 @@
 		// idk this is most aligned with the footer
 		@include grid-column($columns: 10, $offset: 1.25);
 		@media screen and (max-width: $small-breakpoint){
-	      @include grid-column($columns: 12);
-	    }
+			@include grid-column($columns: 12);
+		}
 		margin-top: 3%;
 	}
 	.instaGrid{
 		@include block-grid(3);
 		@media screen and (max-width: $small-breakpoint){
-	      @include block-grid(1);
-	    }
+			@include block-grid(1);
+		}
 		li{
-		@media screen and (max-width: $small-breakpoint){
-	     margin: 5%;
-	    }
-		
+			@media screen and (max-width: $small-breakpoint){
+				margin: 5%;
+			}
+			
 			list-style-type: none;
 			img{
 				width: 350px;
