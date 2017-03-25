@@ -77,6 +77,25 @@ function changeIcon(x) {
     currVal = 0;
   }
 }
+// =================================================================================
+// Instagram API stuff
+  // this is set to Gregs stuff
+    var feed = new Instafeed({
+      clientId: '6f88eb7cccd64b969c6c5e95bfc0045f',
+      target: 'instagrid',
+        accessToken: '482609741.6f88eb7.e3702f2a056c4202bc4f1326bcb1bdac',
+        get: 'user',
+        userId: '482609741',
+        template:' <li> <a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p> </li>', 
+      //filter: function(image) {
+     //    return image.tags.indexOf('proof') >= 0;
+     // }, 
+     limit: 8, 
+     resolution: 'standard_resolution',
+    });
+    feed.run();
+
+// =================================================================================
 
 // =================================================================================
 // Making cover image change with delay
