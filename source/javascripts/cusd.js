@@ -79,13 +79,13 @@ function changeIcon(x) {
 }
 // =================================================================================
 // Instagram API stuff
-  // this is set to Gregs stuff
-    var feed = new Instafeed({
-      clientId: '6f88eb7cccd64b969c6c5e95bfc0045f',
+    // CUSD STUFF
+      var feed = new Instafeed({
+      clientId: '785cd1a0b29e4061b2521a231e5042f8',
       target: 'instagrid',
-        accessToken: '482609741.6f88eb7.e3702f2a056c4202bc4f1326bcb1bdac',
+        accessToken: '3136147498.785cd1a.5cd0d13b3722455fac9e8ce97b348335',
         get: 'user',
-        userId: '482609741',
+        userId: '3136147498',
         template:' <li> <a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p> </li>', 
       //filter: function(image) {
      //    return image.tags.indexOf('proof') >= 0;
