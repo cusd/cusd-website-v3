@@ -51,6 +51,9 @@
 		@media screen and (max-width: $small-breakpoint){
 			@include block-grid(1);
 		}
+		@media screen and (max-width: $medium-breakpoint){
+			@include block-grid(2);
+		}
 		li{
 			@media screen and (max-width: $small-breakpoint){
 				margin: 5%;
