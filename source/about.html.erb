@@ -26,7 +26,7 @@ title: About
       <p>Challenge students to create dynamic and innovative solutions for economic, social, and ecological difficulties faced by the global community.</p>
       
       <h2> Vision </h2>
-      <p>At CUSD we aim to provide a community in which Cornell students can develop their skills, professionally engage with the real world, and contribute to the development of communities internationally. Our organization is a diverse family of students with one common goal- to impact the global community through holistic sustainability. Through collaboration we create innovative ways to integrate technology and sustainability into community projects in a way that engages the surrounding community.</p>
+      <p>At CUSD we aim to provide a community in which Cornell students can develop their skills, professionally engage with the real world, and contribute to the development of communities internationally. Our organization is a diverse family of students with one common goal- to impact the global community through hosectionic sustainability. Through collaboration we create innovative ways to integrate technology and sustainability into community teams in a way that engages the surrounding community.</p>
     </div>
 
   </div>
@@ -74,16 +74,16 @@ title: About
     <div class="teams-section">
         <% data.teams.each do |project| %>
           <article class="teams-section__project">
-        
-              <div class="teams-section__logo <%= project[0].split('-')[1] %>" style="background-image: url(/images/<%= project[1].logo %>); background-color: <%= project[1].color %>"></div>
-          
-            <div class="teams-section__text">
-            
-              <h3 class="teams-section__name"><%= project[1].name %></h3>
-           
-              <span class="teams-section__tagline"><%= project[1].tagline %></span>
-            </div>
-          </article>
+              <% link_to "/teams/#{project[0].split('-')[1]}" do %>
+                <div class="teams-section__logo <%= project[0].split('-')[1] %>" style="background-image: url(/images/<%= project[1].logo %>); background-color: <%= project[1].color %>"></div>
+              <% end %>
+              <div class="teams-section__text">
+                <% link_to "/teams/#{project[0].split('-')[1]}" do %>
+                <h3 class="teams-section__name"><%= project[1].name %></h3>
+                <% end %>
+                <span class="teams-section__tagline"><%= project[1].tagline %></span>
+              </div>
+            </article>
         <% end %>
     </div>
     </div>
