@@ -2,7 +2,7 @@ name: Stone Barns
 logo: project-logos/bluehill.svg
 color: "#037769"
 tagline: Rethinking recycling with Blue Hill Farms
-hero_image: "project-photos/bluehill-hero.jpg"
+hero_image: "project-photos/bluehill-hero.png"
 lede: "Stone Barns Recycling"
 description:
   "<p>The Stone Barns Team is working with the Stone Barns Center for Food and Agriculture to examine the cycling of organic materials and energy through their property.
@@ -10,11 +10,11 @@ description:
    The team is working to optimize and improve this system. 
 </p>"
 photos:
-  - url: project-photos/bluehill1.jpg
+  - url: project-photos/bluehill-1.jpg
     des: 
-  - url: project-photos/bluehill2.jpg
+  - url: project-photos/bluehill-2.jpg
     des:
-  - url: project-photos/bluehill3.jpg
+  - url: project-photos/bluehill-3.jpg
     des:
 impact:
   stats:
