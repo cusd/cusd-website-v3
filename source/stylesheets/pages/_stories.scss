@@ -3,6 +3,7 @@
 	.video {
 		@include grid-column($columns:12, $offset:0);
 		//padding-bottom: rem-calc(20);
+		text-align: center;
 	}
 
 	.sidebar-box {

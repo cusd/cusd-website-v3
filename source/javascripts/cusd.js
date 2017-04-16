@@ -86,8 +86,9 @@ function changeIcon(x) {
         accessToken: '3136147498.785cd1a.5cd0d13b3722455fac9e8ce97b348335',
         get: 'user',
         userId: '3136147498',
-        template:' <li> <a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p> </li>', 
+        template:' <li><a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p></li>', 
         // filter: function(image) {
+        //   console.log(image)
         //    return image.tags.indexOf('cusdhacks') >= 0;
         // }, 
         limit: 8, 
