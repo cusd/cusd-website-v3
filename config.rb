@@ -32,9 +32,9 @@ data.projects.each do |project|
   proxy "/projects/#{project[0].split('-')[1]}.html", "/projects/template.html", :locals => {project: project[1], short_name: project[0].split('-')[1]}, :ignore => true
 end
 
-# data.teams.each do |team|
-#   proxy "/teams/#{team[0].split('-')[1]}.html", "/projects/template.html", :locals => {project: team[1], short_name: team[0].split('-')[1]}, :ignore => true
-# end
+data.teams.each do |team|
+  proxy "/projects/#{team[0].split('-')[1]}.html", "/projects/template.html", :locals => {project: team[1], short_name: team[0].split('-')[1]}, :ignore => true
+end
 
 
 data.pastprojects.each do |pastproject|
