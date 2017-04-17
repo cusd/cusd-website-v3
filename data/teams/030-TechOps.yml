@@ -3,15 +3,15 @@ logo: project-logos/techops.svg
 color: "#8CA699"
 tagline: Developing the digital resources of CUSD
 hero_image: "project-photos/techops-hero.jpg"
-lede: "Marketing and Communications connects stakeholders, students and members with CUSD through storytelling and experiential marketing, both offline and online."
-description: "<p>We bring inspirations to our audience and bring their passion and insights to search for ways to involve them in our journey to create sustainable impact around the world. We also play a vital role in setting directions for and ensuring consistency in CUSD’s visual identity. We are responsible for communicating our values through recruitment, events, social and partnership. Examples of our projects include redesigning the website, creating a style guide, presenting weekly member’s spotlight and strategizing a fundraising campaign.</p>"
+lede: ""
+description: ""
 
 photos:
-  - url: project-photos/marcomm-1.png
+  - url: project-photos/techops-1.png
     des:
-  - url: project-photos/marcomm-2.jpg
+  - url: project-photos/techops-2.jpg
     des:
-  - url: project-photos/marcomm-3.jpg
+  - url: project-photos/techops-3.jpg
     des:
 impact:
   # video:
