@@ -10,39 +10,39 @@ title: About
 
 <div class="sidebar-box">
   <div class="sidebar-box__wrapper">
-    
+
     <div class="quote">
       <h3>"We said ‘we think we can do more, more than just solar.’  We knew we could make a greater impact with a broader understanding of sustainability. That’s when we made the decision to create Cornell University Sustainable Design."
         <br>
         <br>
         – Jeremy Blum </h3>   
+      </div>
+
+      <div class="mission">
+        <h2>Purpose</h2>
+        <p>Empowering people to make a sustainable impact within their own community.</p>
+
+        <h2>Mission</h2>
+        <p>Challenge students to create dynamic and innovative solutions for economic, social, and ecological difficulties faced by the global community.</p>
+
+        <h2> Vision </h2>
+        <p>At CUSD we aim to provide a community in which Cornell students can develop their skills, professionally engage with the real world, and contribute to the development of communities internationally. Our organization is a diverse family of students with one common goal- to impact the global community through hosectionic sustainability. Through collaboration we create innovative ways to integrate technology and sustainability into community teams in a way that engages the surrounding community.</p>
+      </div>
+
     </div>
+  </div>
 
-    <div class="mission">
-      <h2>Purpose</h2>
-      <p>Empowering people to make a sustainable impact within their own community.</p>
-      
-      <h2>Mission</h2>
-      <p>Challenge students to create dynamic and innovative solutions for economic, social, and ecological difficulties faced by the global community.</p>
-      
-      <h2> Vision </h2>
-      <p>At CUSD we aim to provide a community in which Cornell students can develop their skills, professionally engage with the real world, and contribute to the development of communities internationally. Our organization is a diverse family of students with one common goal- to impact the global community through hosectionic sustainability. Through collaboration we create innovative ways to integrate technology and sustainability into community teams in a way that engages the surrounding community.</p>
+  <div class="photo-strip" style="background-image: url(/images/photostrips/ps6.jpg)"></div>
+
+  <div class="values-section">
+    <div class="values-section__header">
+      <h2>Our Values</h2>
     </div>
-
-  </div>
-</div>
-
-<div class="photo-strip" style="background-image: url(/images/photostrips/ps6.jpg)"></div>
-
-<div class="values-section">
-  <div class="values-section__header">
-    <h2>Our Values</h2>
-  </div>
-  <div class="values-section__values">
-    <article class="values-section__value values-section__value--icon-impact">
+    <div class="values-section__values">
+      <article class="values-section__value values-section__value--icon-impact">
        <span class="values-section__label">Impact</span>
-    </article>
-    <article class="values-section__value values-section__value--icon-diversity">
+     </article>
+     <article class="values-section__value values-section__value--icon-diversity">
       <span class="values-section__label">Diversity</span>
     </article>
     <article class="values-section__value values-section__value--icon-efficiency">
@@ -52,18 +52,18 @@ title: About
       <span class="values-section__label">Sustainability</span>
     </article>
     <article class="values-section__value values-section__value--icon-collaboration">
-       <span class="values-section__label">Collaboration</span>
-    </article>
-    <article class="values-section__value values-section__value--icon-responsibility">
-      <span class="values-section__label">Responsibility</span>
-    </article>
-    <article class="values-section__value values-section__value--icon-innovation">
-      <span class="values-section__label">Innovation</span>
-    </article>
-    <article class="values-section__value values-section__value--icon-engagement">
-      <span class="values-section__label">Engagement</span>
-    </article>
-  </div>
+     <span class="values-section__label">Collaboration</span>
+   </article>
+   <article class="values-section__value values-section__value--icon-responsibility">
+    <span class="values-section__label">Responsibility</span>
+  </article>
+  <article class="values-section__value values-section__value--icon-innovation">
+    <span class="values-section__label">Innovation</span>
+  </article>
+  <article class="values-section__value values-section__value--icon-engagement">
+    <span class="values-section__label">Engagement</span>
+  </article>
+</div>
 </div>
 
 <div class="photo-strip" style="background-image: url(/images/photostrips/ps4.jpg)"></div>
@@ -71,21 +71,21 @@ title: About
 <div class="sidebar-section">
   <div class="sidebar-section__header"><h2>Horizontal Teams</h2></div>
 
-    <div class="teams-section">
-        <% data.teams.each do |project| %>
-          <article class="projects-list__project">
-              <% link_to "/projects/#{project[0].split('-')[1]}" do %>
-                <div class="projects-list__project__logo <%= project[0].split('-')[1] %>" style="background-image: url(/images/<%= project[1].logo %>); background-color: <%= project[1].color %>"></div>
-              <% end %>
-              <div class="projects-list__project__text">
-                <% link_to "/projects/#{project[0].split('-')[1]}" do %>
-                <h3 class="projects-list__project__name"><%= project[1].name %></h3>
-                <% end %>
-                <span class="projects-list__project__tagline"><%= project[1].tagline %></span>
-              </div>
-            </article>
+  <div class="teams-section">
+    <% data.teams.each do |project| %>
+    <article class="teams-section__project">
+      <% link_to "/projects/#{project[0].split('-')[1]}" do %>
+      <div class="teams-section__logo <%= project[0].split('-')[1] %>" style="background-image: url(/images/<%= project[1].logo %>); background-color: <%= project[1].color %>"></div>
+      <% end %>
+      <div class="teams-section__text">
+        <% link_to "/projects/#{project[0].split('-')[1]}" do %>
+        <h3 class="teams-section__name"><%= project[1].name %></h3>
         <% end %>
-    </div>
-    </div>
+        <span class="teams-section__tagline"><%= project[1].tagline %></span>
+      </div>
+    </article>
+    <% end %>
+  </div>
+</div>
 
-    <div class="photo-strip" style="background-image: url(/images/photostrips/ps4.jpg)"></div>
+<div class="photo-strip" style="background-image: url(/images/photostrips/ps4.jpg)"></div>
