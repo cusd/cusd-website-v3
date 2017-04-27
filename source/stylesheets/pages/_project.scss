@@ -19,13 +19,15 @@
   }
 
   .gallery {
-    display: flex;
-    justify-content: space-between;
-    margin-top: rem-calc(48);
+    display: block;
+   // justify-content: space-between;
+    margin-top: rem-calc(54);
+    margin-left: 0%;
 
     figure {
-      width: percentage(2/7);
-      box-shadow: $subtle-shadow;
+      //width: percentage(5/7);
+      padding-bottom: 3%;
+      //box-shadow: $subtle-shadow;
     }
   }
 
