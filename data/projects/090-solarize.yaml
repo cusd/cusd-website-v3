@@ -2,7 +2,7 @@ name: Solarize
 logo: project-logos/sol.svg
 color: "#ffcf40"
 tagline: Electrifying Cornell Grounds with sustainable energy sources
-hero_image: "project-photos/bus-hero.jpg"
+hero_image: "project-photos/sol-hero.jpg"
 lede: "Solarize aims to spark Cornell Grounds’ transition to carbon neutrality by replacing traditional energy sources with solar technology."
 description:
   "<p> Our first project involves developing a solar trailer which will provide on-the-go sustainable energy for the maintenance of Cornell's campus. Once this is implemented, we hope to expand our efforts to additional renewable energy projects within Cornell Grounds and the surrounding community. </p>"
