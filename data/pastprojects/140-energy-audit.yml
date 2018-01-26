@@ -1,0 +1,27 @@
+name: Smithsonian Energy Audit
+logo: project-logos/audit.svg
+color: "#F6BC3C"
+tagline: "Conduct a full energy audit of Cooper Hewitt, the Smithsonian Design Museum in NYC"
+hero_image: "project-photos/energy-hero.jpg"
+lede: "Smithsonian Energy Audit looks to analyze the Cooper Hewitt Museum by understanding the ASHRAE standards and visiting the site to collect data and write a comprehensive report."
+description: This project is a full-scale energy audit of Smithsonian's design museum, giving students experience with energy-based consulting and software, all for one of the East-Coast meccas of design. The team has done research on local rebate and other audit-related information required, and familiarized themselves with the tools needed to conduct the audit through dummy building models. They have been developing a scope document for the stakeholder and are working to establish a better connection with the contact at Smithsonian.
+
+photos:
+  - url: project-photos/energy-1.jpg
+    des: 
+  - url: project-photos/energy-2.jpg
+    des:
+  - url: project-photos/energy-3.jpg
+    des:
+impact:
+  stats:
+     - title: 
+       number: 
+     - title: 
+       number:
+     - title: 
+       number: 
+  quote:
+    text: 
+    author:
+    relation: 

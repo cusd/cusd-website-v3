@@ -1,0 +1,28 @@
+name: PIE
+logo: project-logos/pie.svg
+color: "#56c77b"
+tagline: Identifying the next big CUSD project
+hero_image: "project-photos/pie-hero.jpg"
+lede: "Project Identification + Expansion"
+description:
+  "<p> Project Identification and Expansion (PIE) is tasked with developing, expanding, and sustaining CUSD’s mission. Members of PIE are the liaison between new projects and CUSD. They target companies, NGO’s, and groups that align with CUSD’s mission of making a more sustainable world through design. 
+  PIE searches for projects in the Ithaca community, domestically, and internationally.
+</p>"
+photos:
+  - url: project-photos/pie-1.jpg
+    des: 
+  - url: project-photos/pie-2.jpg
+    des:
+  - url: project-photos/pie-3.jpg
+    des:
+impact:
+  stats:
+     - title: Contacts with Stakeholders
+       number: 50
+     - title: Members
+       number: 7
+     - title: Countries
+       number: 4
+     - title: Languages
+       number: 8
+     

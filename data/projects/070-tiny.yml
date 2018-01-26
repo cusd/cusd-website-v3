@@ -1,0 +1,24 @@
+name: Tiny Home
+logo: project-logos/tiny.svg
+color: "#7B95C0"
+tagline: "Big changes, small homes"
+hero_image: "project-photos/tiny-hero.jpg"
+lede: "The goal of this project is to create a mobile tiny home with hands-on, interactive exhibits that show the inner workings of energy efficient features, renewable energy, and other home technologies. This tiny home will then be brought to diverse audiences throughout the area to educate them on easy, cost saving techniques they can implement in their homes. "
+description:
+  "<p>
+  </p>"
+# photos:
+#   - url: 
+#     des: 
+#   - url: 
+#     des:
+#   - url: 
+#     des:
+impact:
+  stats:
+    - title: 
+      number: 
+    - title: 
+      number: 
+    - title: 
+      number: 

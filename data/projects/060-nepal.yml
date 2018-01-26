@@ -1,0 +1,24 @@
+name: Sustainable Education Nepal
+logo: project-logos/nepal_logo.svg
+color: "#E61E26"
+tagline: "A model of sustainability for Nepal"
+hero_image: "project-photos/snn-hero.jpg"
+lede: "The objectives that SEN will achieve by the end of this semester is to create a comprehensive analysis of the school model that UWS currently uses and pin pointing specific improvements that can be made to the model in terms of sustainability, construction, and user experience. The deliverables will include 3D models (digital and physical), simulations on light and energy efficiency, investigation on UWS school’s past performance, and research on structures dealing with extreme climate and site conditions. "
+description:
+  "<p>
+  </p>"
+photos:
+  - url: project-photos/snn-1.jpg
+    des: 
+  - url: project-photos/snn-2.jpg
+    des:
+  - url: project-photos/snn-3.jpg
+    des:
+impact:
+  stats:
+    - title: 
+      number: 
+    - title: 
+      number: 
+    - title: 
+      number: 

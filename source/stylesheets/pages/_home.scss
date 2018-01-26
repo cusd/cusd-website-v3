@@ -44,14 +44,17 @@
 }
 
 .apply {
+  
   @include grid-column($columns:6);
   @media #{$small-only} {
+    text-align: center;
     @include grid-column($columns:10, $offset: 1);
   }
 
   .button {
-    @include grid-column($columns: 3, $offset: 2);
-    margin-top: rem-calc(74);
+    @include grid-row();
+    @include grid-column($columns:6, $center:true,  $offset:1 );
+    margin-top: rem-calc(40);
     @media #{$small-only} {
       @include grid-column($columns:5, $offset: 3);
       margin-top: rem-calc(30);

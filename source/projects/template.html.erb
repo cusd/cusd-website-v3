@@ -18,12 +18,14 @@
       <%= project.description %>
 
       <div class="gallery">
+      <% if project.photos %>
         <% project.photos.each do |i| %>
           <figure>
             <%= image_tag i.url, alt: i.desc %>
           </figure>
         <% end %>
       </div>
+      <% end %>
     </article>
 
     <aside class="impact">
@@ -45,11 +47,13 @@
       <% end %>
 
       <% if project.impact.key? 'stats' %>
-        <% project.impact.stats.each do |s| %>
-        <article class="impact__stat">
-          <span class="impact__stat__title"><%= s.title %></span>
-          <span class="impact__stat__number"><%= s.number %></span>
-        </article>
+        <% if project.impact.stats%>
+          <% project.impact.stats.each do |s| %>
+            <article class="impact__stat">
+              <span class="impact__stat__title"><%= s.title %></span>
+              <span class="impact__stat__number"><%= s.number %></span>
+            </article>
+          <% end %>
         <% end %>
       <% end %>
 
