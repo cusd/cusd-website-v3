@@ -1,0 +1,27 @@
+name: "Operations & Strategy"
+logo: project-logos/operations.svg
+color: "#184B72"
+tagline: "Ensuring the success of members during and beyond their CUSD experience"
+hero_image: "project-photos/stratops-hero.jpg"
+lede: "Strategy and Operations are support and organizational sub teams within CUSD."
+description: "<p>Strategy provides resources and programming for the organization at large but focus mainly on current projects and new project identification. Operations acts as a managerial body to ensure the success and longevity of CUSD.</p>"
+
+photos:
+  - url: project-photos/pie-1.jpg
+    des:
+  - url: project-photos/pie-2.jpg
+    des:
+  - url: project-photos/pie-3.jpg
+    des:
+impact:
+  # video:
+  #   url: https://www.youtube.com/embed/xTWT3oMcpOw
+  #   title: Title of the Video
+  stats:
+    - title:
+      number: 
+    - title: 
+      number: 
+    - title: 
+      number:
+
