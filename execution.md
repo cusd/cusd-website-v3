@@ -38,5 +38,8 @@ Once you have access, and you are **on RedRover or have a VPN setup**, build the
 
 # Known Errors
 On macOS High Sierra, there is a json issue with Middleman
+Has something to do with the build version of the json. This command has fixed it in the past but who knows how Apple could change their configs.
 
-!!!Figure out that issue...
+`gem 'json', github: 'flori/json', branch: 'v1.8'`
+
+
