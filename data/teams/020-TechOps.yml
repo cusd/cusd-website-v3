@@ -5,8 +5,7 @@ tagline: Developing the digital resources of CUSD
 hero_image: "project-photos/techops-hero.jpg"
 lede: "Technical Operations supports all of CUSD’s digital resources, both as an organization as a whole, and through each subproject."
 description: "<p>In 2015, when CUSD redesigned its website, the organization found a need for a sub team with a development background to maintain its ever-expanding digital presence. In the past two years, examples of our projects include the Sustainable Education Ghana website page expansion, the construction of an internal CUSD alumni database, and custom team water bottles.</p>
-<p>Looking forward for Spring 2018, our overarching goals are to improve connections among current and past members and create better methods to communicate the CUSD mission and impact. Technical Operations hopes to continue to build the CUSD alumni database for its official release as well as design and develop more informative data visualizations for the CUSD website. 
-</p>" 
+<p>Looking forward for Spring 2018, our overarching goals are to improve connections among current and past members and better communicate the CUSD mission. Technical Operations hopes to continue to build the CUSD alumni database for its official release as well as design and develop more informative data visualizations for the CUSD website. </p>" 
 
 photos:
   - url: project-photos/techops-1.jpg
@@ -21,5 +20,5 @@ impact:
   #   title: Title of the Video
   stats:
     - title: Total Lines of Code Contributed by Current Members
-      number: 2,600,000
+      number: 2.6M
 
