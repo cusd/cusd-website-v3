@@ -5,7 +5,8 @@ tagline: Developing the digital resources of CUSD
 hero_image: "project-photos/techops-hero.jpg"
 lede: "Technical Operations supports all of CUSD’s digital resources, both as an organization as a whole, and through each subproject."
 description: "<p>In 2015, when CUSD redesigned its website, the organization found a need for a sub team with a development background to maintain its ever-expanding digital presence. In the past two years, examples of our projects include the Sustainable Education Ghana website page expansion, the construction of an internal CUSD alumni database, and custom team water bottles.</p>
-<p>For Spring 2017, Technical Operations has partnered with Ithaca Welcomes Refugees, a community organization that fosters a welcoming environment for refugees who come to the region. We are working to create a website that provides historical, factual information about refugees in Ithaca and humanizes their experience. We are using digital, interactive maps to represent the trends and where different individual refugees came from and what their journeys were like. Stay tuned for the launch of the website in May.</p>" 
+<p>Looking forward for Spring 2018, our overarching goals are to improve connections among current and past members and create better methods to communicate the CUSD mission and impact. Technical Operations hopes to continue to build the CUSD alumni database for its official release as well as design and develop more informative data visualizations for the CUSD website. 
+</p>" 
 
 photos:
   - url: project-photos/techops-1.jpg
@@ -19,9 +20,6 @@ impact:
   #   url: https://www.youtube.com/embed/xTWT3oMcpOw
   #   title: Title of the Video
   stats:
-    - title: Sociology major
-      number: 1
-    - title: Developers
-      number: 2
-    - title: Designers
-      number: 2
+    - title: Total Lines of Code Contributed by Current Members
+      number: 2,600,000
+
