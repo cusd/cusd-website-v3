@@ -79,24 +79,41 @@ function changeIcon(x) {
 }
 // =================================================================================
 // Instagram API stuff
-    // CUSD STUFF
-      var feed = new Instafeed({
-        clientId: '785cd1a0b29e4061b2521a231e5042f8',
-        target: 'instagrid',
-        accessToken: '3136147498.785cd1a.5cd0d13b3722455fac9e8ce97b348335',
-        get: 'user',
-        userId: '3136147498',
-        template:' <li><a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p></li>', 
-        // filter: function(image) {
-        //   console.log(image)
-        //    return image.tags.indexOf('cusdhacks') >= 0;
-        // }, 
-        limit: 8, 
-        resolution: 'standard_resolution',
-    });
-    feed.run();
+// if on the stories page....
+if ($("#instagrid").length){
+  var feed = new Instafeed({
+    // CUSD LOGINS
+    clientId: '785cd1a0b29e4061b2521a231e5042f8',
+    target: 'instagrid',
+    accessToken: '3136147498.785cd1a.5cd0d13b3722455fac9e8ce97b348335',
+    get: 'user',
+    userId: '3136147498',
+    template: ' <li><a href="{{link}}"><img class="text-center" src="{{image}}" alt="instagramImage"></a> <h3 class="photoAuthor text-left"> <span class="author">CUSD</span> · <span class="photoSource text-left"> Instagram</span></h3> <p class="photoCaption"> {{caption}}</p></li>',
+    // filter: function(image) {
+    //   console.log(image)
+    //    return image.tags.indexOf('cusdhacks') >= 0;
+    // }, 
+    limit: 8,
+    resolution: 'standard_resolution',
+  });
+  feed.run();
+}
+      
 
 // =================================================================================
+
+// Visualizations stuff
+function generateViz(){
+  // insert target ID here
+  if ($("#targetID").length) {
+    console.log("generating visualization...");
+  }
+}
+
+// generateViz();
+
+
+
 
 // =================================================================================
 // Making cover image change with delay
