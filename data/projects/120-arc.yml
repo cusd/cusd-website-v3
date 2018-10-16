@@ -1,0 +1,31 @@
+name: ARC
+logo: project-logos/arc.svg
+color: "#C0D563"
+tagline: "Alternative Recycling Cornell"
+hero_image: "project-photos/arc-hero.jpg"
+lede: "Established in Fall 2017 as a project team and integrated into CUSD in Spring 2018, Alternative Recycling Cornell (ARC) will involve completing work on a plastic shredder and creating a plastic mold-injector to reshape plastic waste into other simple materials."
+description:
+  "<p>
+  Eventually, we plan to introduce this alternative waste system to the local Cornell/
+  Ithaca community, where we can re-purpose plastic waste on a broader scale.
+</p>
+<p>
+Additionally, ARC will consist of community outreach,
+educating local elementary school students and the
+general public about recycling.
+  </p>"
+# photos:
+#   - url:
+#     des:
+#   - url:
+#     des:
+#   - url:
+#     des:
+impact:
+  stats:
+    - title:
+      number:
+    - title:
+      number:
+    - title:
+      number:

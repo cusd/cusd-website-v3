@@ -1,0 +1,34 @@
+name: Sweep
+logo: project-logos/sweep.svg
+color: "#B7AEA9"
+tagline: "Solid Waste Environmental Excellence Protocol"
+hero_image: "project-photos/sweep-hero.jpg"
+lede: "SWEEP is set to become the waste management equivalent of LEED certification. "
+description:
+  "<p>We’re working on this project with
+Cornell Sustainability Consultants (CSC) and Rob Watson
+(creator of LEED).
+</p>
+<p>
+Set to launch in Fall 2018, this project entails collecting
+and analyzing data on waste management in Ithaca, and
+researching best practices for reducing waste and new
+technologies to reuse waste. We’ll be focusing on conversion
+technology for waste materials and conducting
+an infrastructure analysis, while CSC focuses on governance.
+  </p>"
+# photos:
+#   - url:
+#     des:
+#   - url:
+#     des:
+#   - url:
+#     des:
+impact:
+  stats:
+    - title:
+      number:
+    - title:
+      number:
+    - title:
+      number:
