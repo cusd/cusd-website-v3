@@ -18,58 +18,40 @@
     width: 100%;
     height: 60%;
 
-    .accordion__content{  //should be .accordion . accordion content
-      background-color: pink;
+    .container{
+      position: relative;
+      width: 20%;
+      background-color: grey;
+      text-align: center;
+    }
+
+    .container{
+      :nth-of-type(1) {
+        background: red;
+      }
+    }
+
+    .overlay {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 25%;
-      width: 40%;
+      height: 100%;
+      width: 100%;
       opacity: 0;
-      overflow: auto;
-      transition: .5s ease;
-      z-index: 100;
     }
 
-    .accordion{
-      background-color: grey;
-      width: 25%;
-      display: inline-flex;
-      padding-top: 2%;
-      padding-bottom: 2%;
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text{
+      color: white;
+      font-size: 20px;
+      position: absolute;
       text-align: center;
-      justify-content: center;
-      height: 100%;
-      align-items: center;
-      &:hover .accordion__content{
-        opacity: 1;
-        background-color: pink;
-        display: visible;
-      }
     }
-
-    .accordion1{
-      background-color: purple;
-      width: 25%;
-      display: inline-flex;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      text-align: center;
-      justify-content: center;
-      height: 100%;
-      align-items: center;
-      &:hover .accordion__content{
-        opacity: 1;
-        background-color: pink;
-        display: visible;
-      }
-    }
-
-    // .accordion1:hover .accordion__content{
-    //   opacity: 1;
-    // }
 
 
     .accordion__header{
