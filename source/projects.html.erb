@@ -26,9 +26,20 @@ title: Projects
       </div>
     </div>
 
+    <div class="container">
+      <h3>Reliable<br>Stakeholder</h3>
+      <div class="overlay">
+        <div class="text">
+        <p>Ideally we look for a stakeholder that has an existing, positive relationship with the community, and is in need of low cost services to bring the project to fruition.</p>
+        <p>The stakeholder’s mission should be aligned with the tangible aims of CUSD, and they should know exactly what they need from CUSD, but be open to creativity and innovation.</p>
+        <p>Mostly, we look for stakeholders who are willing and able to serve as a mentor throughout the project.</p>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container">
-        <h3>Multifaceted Projects</h3>
+        <h3>Multifaceted<br>Projects</h3>
       <div class="overlay">
         <div class="text">
         <p>Projects should be multifaceted and a community priority. We tackle projects that
@@ -37,18 +48,13 @@ title: Projects
       </div>
     </div>
 
-    <div class="container">
-        <h3>Multifaceted Projects</h3>
-      <div class="overylay">
-          <div class="text">
-            <p>Projects should be multifaceted and a community priority. We tackle projects that
-              require a design-build are driven or positively impacted by holistic sustainability.</p>
-          </div>
-      </div>
-    </div>
+
 
     </div>
   </aside>
+
+
+  <div class="photo-strip" style="background-image: url(/images/photostrips/ps7.jpg)"></div>
 
 
 
@@ -90,9 +96,9 @@ title: Projects
     -->
   <div class="sidebar-box">
     <div class="sidebar-box__wrapper">
-
+      <h2 class="projects-list__header">Current Projects</h2>
       <div class="projects-list projects-list--current-projects">
-        <h2 class="projects-list__header">Current Projects</h2>
+        <!-- <h2 class="projects-list__header">Current Projects</h2> -->
         <% data.projects.each do |project| %>
          <% if project[1].name == "Sustainable Education Ghana"%>
             <article class="projects-list__project">
@@ -162,8 +168,9 @@ title: Projects
   <div class="photo-strip" style="background-image: url(/images/photostrips/ps7.jpg)"></div>
 
   <div class="projects-secondary">
+    <h2 class="projects-list__header">Past Projects</h2>
     <div class="projects-list">
-      <h2 class="projects-list__header">Past Projects</h2>
+      <!-- <h2 class="projects-list__header">Past Projects</h2> -->
 
       <% data.pastprojects.each do |project| %>
           <article class="projects-list__project">
@@ -180,6 +187,8 @@ title: Projects
         <% end %>
       </div>
 
+
+      <!-- <div class="research">
       <div class="projects-list2">
         <h2 class="projects-list__header">Research, Events and Outreach</h2>
         <% data.small_projects.each do |project| %>
@@ -190,12 +199,34 @@ title: Projects
         <% end %>
       </div>
 
+
       <div class="work-with-us">
         <h2 class="work-with-us__header">Interested in Working With Us?</h2>
         <p class="work-with-us__text">We scope new projects year-round and are always looking to get in touch with potential stakeholders.</p>
         <a href="mailto:cu.sustainabledesign@gmail.com?subject=Project Suggestion for CUSD" class="work-with-us__button button">Suggest a Project</a>
       </div>
+    </div> -->
 
+  </div>
+
+
+  <div class="research">
+  <div class="projects-list2">
+    <h2 class="projects-list__header">Research, Events and Outreach</h2>
+    <% data.small_projects.each do |project| %>
+      <article class="projects-list__project">
+        <h3 class="projects-list__project__name"><%= project.name %></h3>
+        <span class="projects-list__project__tagline"><%= project.tagline %></span>
+      </article>
+    <% end %>
+  </div>
+
+
+  <div class="work-with-us">
+    <h2 class="work-with-us__header">Interested in Working With Us?</h2>
+    <p class="work-with-us__text">We scope new projects year-round and are always looking to get in touch with potential stakeholders.</p>
+    <a href="mailto:cu.sustainabledesign@gmail.com?subject=Project Suggestion for CUSD" class="work-with-us__button button">Suggest a Project</a>
+  </div>
   </div>
 
   <div class="photo-strip" style="background-image: url(/images/photostrips/ps7.jpg)"></div>
