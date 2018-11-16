@@ -89,7 +89,7 @@
       flex-direction: row;
       justify-content: center;
       padding: 2%;
-      height: 260px;
+      height: 300px;
     }
   }
 
@@ -120,7 +120,7 @@
   .projects-list {
     // @include grid-column($columns: 12);
     padding: rem-calc(7);
-    padding-left: 10%;
+    // padding-left: 10%;
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     // display: inline-block;
@@ -129,7 +129,7 @@
     &__header {
       // width: 100%;
       text-align: center;
-      padding-top: 3%;
+      padding: 3% 0 1% 0;
     }
 
     &__project {
@@ -141,6 +141,16 @@
         // width: 100%;
         display: grid;
         padding: rem-calc(0 0);
+      }
+
+      .overlay2 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
       }
 
       &__logo {
@@ -156,8 +166,12 @@
         background-size: 45% 65%;
         opacity: 1;
         transition: opacity $transition-speed;
-        &:hover{ opacity: 1; }
+        &:hover .overlay2{
+          opacity: .8;
+          background-color: white;
+        }
       }
+
 
       &__text {
         // float: left;
@@ -168,7 +182,7 @@
         // width: 30%;
         // padding-left: rem-calc(16);
       }
-      //
+
       &__name {
         margin-top: rem-calc(-5);
         opacity: 1;
@@ -177,31 +191,20 @@
         font-size: 30px;
         font-weight: lighter;
         &:hover {
-          opacity: .8
+          opacity: 1
         }
+      }
+      &__wrap {
+        position: relative;
       }
 
       &__tagline {
-        // font-size: rem-calc(20);
-        // text-align: center;
-        color: white;
-        font-size: 20px;
-        position: absolute;
         text-align: center;
-
-      }
-
-      .overlay2 {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
         overflow: auto;
+        color: black;
+        font-size: 20px;
       }
+
     }
 
     &--current-projects {
@@ -215,22 +218,10 @@
       .projects-list__project {
         width: 100%;
       }
+
     }
   }
 
-  // .choose-project {
-    // @include grid-column($columns: 4, $offset: 2);
-    // padding: rem-calc(72-9 0);
-    //
-    // @media screen and (max-width: $small-breakpoint){
-    //   display: none;
-    //   width: 0%;
-    // }
-    //
-    // .accordion {
-    //   margin-top: rem-calc(48);
-    // }
-  // }
 
   .projects-list2{
     width: 50%;
@@ -263,7 +254,7 @@
   }
 
   .research{
-    padding: 4rem;
+    padding: 3rem;
     background-color: #F2F2F2;
     width: 100%;
   }
