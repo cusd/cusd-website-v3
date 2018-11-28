@@ -7,23 +7,36 @@
   </div>
 </div>
 
-<div class="sidebar-box">
+<div class="mission">
+  <h2>Our Mission</h2>
+    <p class="lede">
+      <%= project.lede %>
+    </p>
+</div>
+<!-- <div class="sidebar-box"> -->
   <div class="sidebar-box__wrapper">
 
-    <article class="description">
-      <p class="lede">
-        <%= project.lede %>
-      </p> 
 
-      <%= project.description %>
+    <article class="description">
+      <!-- <div class="mission">
+        <h2>Our Mission</h2>
+          <p class="lede">
+            <%= project.lede %>
+          </p>
+      </div> -->
+
+
 
       <div class="gallery">
       <% if project.photos %>
+      <%= project.description %>
         <% project.photos.each do |i| %>
           <figure>
             <%= image_tag i.url, alt: i.desc %>
           </figure>
         <% end %>
+
+
       </div>
       <% end %>
     </article>
@@ -60,7 +73,7 @@
     </aside>
 
   </div>
-</div>
+<!-- </div> -->
 
 
 <div class="photo-strip " style="background-image: url(/images/<%= project.hero_image %>)"></div>

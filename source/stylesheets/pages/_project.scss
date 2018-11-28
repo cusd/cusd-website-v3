@@ -8,15 +8,35 @@
     }
   }
 
+  .mission{
+    background-color: #CFEAE6;
+    opacity: .8;
+    font-style: helvetica;
+    text-align: center;
+    p{
+      width: 100%;
+    }
+    padding: 3% 2%;
+    font-weight: lighter;
+  }
+
   .description {
-    @include grid-column($columns: 7);
-    padding: rem-calc(72 0);
+    // @include grid-column($columns: 7);
+    // padding: rem-calc(72 0);
 
     @media screen and (max-width: $medium-breakpoint){
       width: 100%;
       padding: rem-calc(20 20);
     }
+    padding-top: 5%;
+
+    p{
+      width: 40%;
+      display: inline-block;
+    }
+
   }
+
 
   .gallery {
     display: block;
@@ -28,6 +48,7 @@
       //width: percentage(5/7);
       padding-bottom: 3%;
       //box-shadow: $subtle-shadow;
+      display: inline-block;
     }
   }
 
