@@ -41,8 +41,13 @@
     }
   }
 
+
+
+
   .values-section {
     @include grid-row();
+
+
 
     &__header {
       @include grid-column($columns: 3);
@@ -141,8 +146,29 @@
     }
   }
 
+
+
+  .about .sidebar-section{
+    max-width: 74rem;
+  }
+
+
+
   .sidebar-section {
     @include grid-row;
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+
+.sponsor-info{
+  position: relative;
+  top:240px;
+  // margin-bottom: 200px;
+}
 
     &__header {
       @include grid-column($columns: 3);
@@ -240,5 +266,7 @@
 .block{
   left: 55px;
   position: relative;
-  // width:2000px;
+
 }
+
+
