@@ -162,7 +162,7 @@
         display: inline-grid;
         width: 100%;
         height: 300px;
-        padding-top: percentage(2/6);
+        // padding-top: percentage(2/6);
         background-color: $light-gray;
         background-position: center center;
         background-repeat: no-repeat;
@@ -236,7 +236,6 @@
       height: inherit;
       width: inherit;
       opacity: 0;
-      position: absolute;
       overflow: hidden;
     }
 
