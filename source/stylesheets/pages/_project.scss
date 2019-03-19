@@ -18,6 +18,13 @@
     }
   }
 
+  .chart {
+    .chart-caption {
+      font-size: rem-calc(24);
+      text-align: center;
+    }
+  }
+
   .gallery {
     display: block;
    // justify-content: space-between;

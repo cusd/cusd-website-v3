@@ -19,7 +19,12 @@
 
       <% if project.name? "Solarize" %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <canvas id="lineChart" width="400" height="400"></canvas>
+        <div class="chart">
+          <canvas id="lineChart" width="400" height="400"></canvas>
+          <p class="chart-caption">Cornell's goal is to reduce carbon emissions to 0 by 2035. The graph shows changes in CO2 emissions since 2008,
+            <a href="https://sustainablecampus.cornell.edu/our-leadership/cap/ghg-inventory">source</a>
+          </p>
+        </div>
         <%= javascript_include_tag  "solarize_charts" %>
       <% end %>
 
