@@ -17,6 +17,12 @@
 
       <%= project.description %>
 
+      <% if project.name? "Solarize" %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <canvas id="lineChart" width="400" height="400"></canvas>
+        <%= javascript_include_tag  "solarize_charts" %>
+      <% end %>
+
       <div class="gallery">
       <% if project.photos %>
         <% project.photos.each do |i| %>
