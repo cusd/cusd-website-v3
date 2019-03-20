@@ -17,7 +17,7 @@ title: Connect
 
 
     <div class="contacts">
-      <% data.contact.each do |contact| %>
+      <% data.contact.sort.each do |contact| %>
       <article class="contact">
        <img class="contact__photo" src="<%= contact[1].image %>">
        <div class="contact__info">
