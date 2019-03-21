@@ -34,28 +34,16 @@
 
 
   <article class="description">
-      <!-- <div class="mission">
-        <h2>Our Mission</h2>
-          <p class="lede">
-            <%= project.lede %>
-          </p>
-      </div> -->
+      <%= project.description %>
 
-
-
-
-
-
-      <!-- <div class="gallery"> -->
+      <div class="gallery">
       <% if project.photos %>
-
         <% project.photos.each do |i| %>
           <figure>
             <%= image_tag i.url %>
           </figure>
-          <span class="pic_caption"><%= i.des %></span>
         <% end %>
-      <!-- </div> -->
+      </div>
       <% end %>
   </article>
 

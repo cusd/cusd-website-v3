@@ -56,18 +56,18 @@
     }
 
     .container1:hover .overlay {
-      opacity: .6;
+      opacity: .9;
       // background-color: #85C2BA;
       background-color: white;
     }
 
     .container2:hover .overlay {
-      opacity: .6;
+      opacity: .9;
       background-color: white;
     }
 
     .container3:hover .overlay {
-      opacity: .6;
+      opacity: .9;
       background-color: white;
     }
 
@@ -78,6 +78,7 @@
       text-align: center;
       font-weight: lighter;
       font-style: helvetica;
+      padding: 5px;
     }
 
 
@@ -244,7 +245,7 @@
     }
 
     .con2:hover .overlay2{
-      opacity: .8;
+      opacity: .9;
       background-color: white;
     }
   }
