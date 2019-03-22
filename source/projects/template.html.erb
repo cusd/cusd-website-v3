@@ -30,7 +30,12 @@
         <% end %>
       </div>
       <% end %>
-    
+      <% if project.visualization %>
+        <iframe src="<%= project.visualization %>" style="width:1000px;height:800px;">
+        </iframe>
+        <% end %>
+    </article>
+
     <aside class="impact">
       <% if project.impact.key? 'video' %>
         <article class="impact__video">
