@@ -48,6 +48,7 @@
       @include grid-column($columns: 3);
       height: rem-calc(298);
       position: relative;
+      opacity: 0.3%;
 
       @media #{$medium-only} {
         @include grid-column($offset: 1);
@@ -179,6 +180,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: rem-calc(30 0 63 0);
+    opacity: 0.3;
 
     @media #{$medium-only} {
       @include grid-column($columns: 6.5, $offset: 1.5);
