@@ -1,0 +1,33 @@
+name: Roots
+logo: project-logos/roots.svg
+color: "#BD96C3"
+tagline: "Designing a two acre demonstration plot in Delhi, India"
+hero_image: "project-photos/roots-hero.jpg"
+lede: "In collaboration with its stakeholder Social Awareness Newer Alternatives (SANA), Roots will focus on the development of an innovative and informative two-acre demonstration plot for small-holder farmers in India."
+description:
+  "<p>
+  This exhibit will be designed to showcase cutting-edge
+  agricultural practices that will improve crop yield while
+  reducing waste and resource usage.
+</p>
+<p>
+The project is currently in its research phase. Topics of
+study include the following: permaculture, crop rotation,
+hydroponics and aeroponics, vermicompost, rainwater
+harvesting, and sustainable irrigation methods.
+  </p>"
+# photos:
+#   - url:
+#     des:
+#   - url:
+#     des:
+#   - url:
+#     des:
+impact:
+  stats:
+    - title:
+      number:
+    - title:
+      number:
+    - title:
+      number:
