@@ -1,40 +1,53 @@
 .projects {
 
   .sidebar-box {
-    @include sidebar-box($columns: 4, $side: right);
+    // @include sidebar-box($columns: 4, $side: right);
 
     @media screen and (max-width: $medium-breakpoint){
       background: none;
     }
   }
 
-  .description {
-    @include grid-column($columns: 7);
-    padding: rem-calc(72 0);
+  .intro {
+
+    &__mission {
+      font-size: 33px;
+    }
+    background-color: #f2f3f3;
+    text-align: center;
+    padding: rem-calc(30 50);
 
     @media screen and (max-width: $medium-breakpoint){
       width: 100%;
-      padding: rem-calc(20 20);
     }
   }
 
+  .description {
+    padding: rem-calc(30 100);
+    text-align: center;
+
+    @media screen and (max-width: $medium-breakpoint){
+      width: 100%;
+    }
+  }
   .gallery {
-    display: block;
+    
    // justify-content: space-between;
     margin-top: rem-calc(54);
     margin-left: 0%;
 
     figure {
-      //width: percentage(5/7);
-      padding-bottom: 3%;
-      //box-shadow: $subtle-shadow;
+      display: inline-block;
+      width: percentage(2.3/7);
+      padding-right: 1%;
+      padding-left: 1%;
+      padding-bottom: 1%;
     }
   }
 
   .impact {
-    @include grid-column($columns: 3, $offset: 2);
-    padding: rem-calc(72 0);
     font-weight: $font-weight-normal;
+    padding-bottom: 2%;
 
     @media screen and (max-width: $medium-breakpoint){
       width: 0%;
@@ -54,9 +67,14 @@
     }
 
     &__stat {
+      display: inline-block;
+      width: percentage(2.3/7);
+      padding-right: 1%;
+      padding-left: 1%;
+      text-align: left;
 
       &:not(:first-of-type) {
-        margin-top: rem-calc(48);
+        margin-top: rem-calc(12);
       }
 
       &__title {
@@ -65,7 +83,7 @@
       }
 
       &__number {
-        font-size: rem-calc(42);
+        font-size: rem-calc(34);
       }
     }
   }

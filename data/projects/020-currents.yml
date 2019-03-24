@@ -12,6 +12,7 @@ photos:
     des:
   - url: project-photos/upson-3.jpg
     des:
+visualization: https://currents-visualization.herokuapp.com
 impact:
   # video:
   #   url: https://www.youtube.com/embed/xTWT3oMcpOw
