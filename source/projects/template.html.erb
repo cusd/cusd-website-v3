@@ -20,6 +20,15 @@
 
   <div class="description">
       <%= project.description %>
+    
+      <% if project.name? "Currents" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://currents-visualization.herokuapp.com" style="width:670px;height:707px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+	    <% end %>
 
       <div class="gallery">
       <% if project.photos %>
