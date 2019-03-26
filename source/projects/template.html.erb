@@ -15,12 +15,12 @@
   </p>
   <p class="lede">
     <%= project.lede %>
-  </p> 
+  </p>
   </article>
 
   <div class="description">
       <%= project.description %>
-    
+
       <% if project.name? "Currents" %>
         <br>
         <br>
@@ -39,11 +39,8 @@
         <% end %>
       </div>
       <% end %>
-      <% if project.visualization %>
-        <iframe src="<%= project.visualization %>" style="width:1000px;height:800px;">
-        </iframe>
-        <% end %>
-    </article>
+
+    </div>
 
     <aside class="impact">
       <% if project.impact.key? 'video' %>
