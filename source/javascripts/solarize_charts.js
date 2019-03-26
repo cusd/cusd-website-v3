@@ -16,7 +16,9 @@ var emissionsLineChart = new Chart(lineCtx, {
         },
         {
           label: 'Future emissions track',
-          data: [{x: 2017, y: 204200}, {x: 2019, y: 200000}],
+          data: [{x: 2017, y: 204200}, {x: 2021, y: 142600}, {x: 2025, y: 101000},
+            {x: 2029, y: 60000}, {x: 2033, y: 30000}, {x: 2035, y: 0}
+          ],
           showLine: true,
           fill: false,
           borderColor: 'rgb(129, 195, 108)',
@@ -38,7 +40,7 @@ var emissionsLineChart = new Chart(lineCtx, {
           labelString: 'Year'
         },
         ticks: {
-          stepSize: 1,
+          stepSize: 4,
         }
       }]
     }
