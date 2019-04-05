@@ -31,6 +31,7 @@
         </div>
         <%= javascript_include_tag  "solarize_charts" %>
       <% end %>
+
       <% if project.name? "Currents" %>
         <br>
         <br>
@@ -39,6 +40,15 @@
           <p>Your browser does not support iframes.</p>
         </iframe>
 	    <% end %>
+
+      <% if project.name? "Sustainable Education Nepal" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1000px;height:720px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
 
       <div class="gallery">
       <% if project.photos %>
