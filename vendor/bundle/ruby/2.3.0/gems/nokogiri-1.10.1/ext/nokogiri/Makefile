@@ -12,9 +12,9 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0
+topdir = /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0
 hdrdir = $(topdir)
-arch_hdrdir = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0/universal-darwin18
+arch_hdrdir = /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0/universal-darwin17
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
 prefix = $(DESTDIR)/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20190320-65162-dwy725
-sitelibdir = $(DESTDIR)./.gem.20190320-65162-dwy725
+sitearchdir = $(DESTDIR)./.gem.20190327-57418-1qe2r49
+sitelibdir = $(DESTDIR)./.gem.20190327-57418-1qe2r49
 sitedir = $(DESTDIR)/Library/Ruby/Site
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -51,7 +51,7 @@ htmldir = $(docdir)
 infodir = $(DESTDIR)/usr/share/info
 docdir = $(datarootdir)/doc/$(PACKAGE)
 oldincludedir = $(DESTDIR)/usr/include
-includedir = $(DESTDIR)/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk$(prefix)/include
+includedir = $(prefix)/include
 localstatedir = $(prefix)/var
 sharedstatedir = $(prefix)/com
 sysconfdir = $(DESTDIR)/Library/Ruby/Site
@@ -80,14 +80,14 @@ optflags =
 debugflags = -g
 warnflags = 
 CCDLFLAGS = 
-CFLAGS   = $(CCDLFLAGS)  -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2 -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
+CFLAGS   = $(CCDLFLAGS)  -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -iwithsysroot /usr/local/libressl/include  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2 -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33/include -I/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/include/libxml2 -I/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
+CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33/include -I/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/include/libxml2 -I/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
 CXXFLAGS = $(CCDLFLAGS)  -g -Os -pipe  $(ARCH_FLAG)
-ldflags  = -L.
+ldflags  = -L.             -L /BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/libressl/lib -L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
-ARCH_FLAG = 
+ARCH_FLAG =  -arch x86_64 -arch i386
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
@@ -101,7 +101,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = universal-darwin18
+arch = universal-darwin17
 sitearch = $(arch)
 ruby_version = 2.3.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -122,8 +122,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = . $(libdir) /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/lib /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/lib -L/Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33/lib
+libpath = . $(libdir) /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/lib /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/lib -L/Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -134,7 +134,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33/lib/libexslt.a -lm -liconv -lpthread -lz /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/lib/libxml2.a /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxslt/1.1.33/lib/libxslt.a -lm -liconv -lpthread -lz /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin18/libxml2/2.9.9/lib/libxml2.a -llzma -lpthread -ldl -lobjc  
+LIBS = $(LIBRUBYARG_SHARED) /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33/lib/libexslt.a -lm -liconv -lpthread -lz /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/lib/libxml2.a /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxslt/1.1.33/lib/libxslt.a -lm -liconv -lpthread -lz /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin17/libxml2/2.9.9/lib/libxml2.a -llzma -lpthread -ldl -lobjc  
 ORIG_SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 SRCS = $(ORIG_SRCS) 
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o
