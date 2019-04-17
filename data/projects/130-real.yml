@@ -1,0 +1,31 @@
+name: REAL
+logo: project-logos/real.jpg
+color: "#40e2e5"
+tagline: "Empowering local farms through the system of Aquaponics"
+hero_image: "project-photos/real-farm.jpg"
+lede: "REAL aims to address insecurities in the food system by designing a sustainable controlled 
+environment agriculture system for cold climates to empower small, sustainable farms, 
+increase the knowledge base surrounding sustainable agriculture, and make locally-sourced, 
+healthy crops more accessible."
+description:
+  "<p>
+This project is currently in a research and development 
+phase with the ultimate goals of designing a recirculating aquaponics system to support 
+region-specific crops, designing and building a greenhouse, and implementing sophisticated 
+control systems to maintain an ideal growing environment.
+  </p>"
+photos:
+- url: project-photos/real1.jpg
+    des:
+- url: project-photos/real2.jpg
+    des:
+ - url:
+    des:
+impact:
+  stats:
+    - title:
+      number:
+    - title:
+      number:
+    - title:
+      number:
