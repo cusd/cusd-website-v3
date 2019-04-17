@@ -15,11 +15,30 @@
   </p>
   <p class="lede">
     <%= project.lede %>
-  </p> 
+  </p>
   </article>
 
   <div class="description">
       <%= project.description %>
+
+      <% if project.name? "Solarize" %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <div class="chart">
+          <canvas id="lineChart" width="400" height="400"></canvas>
+          <p class="chart-caption">Cornell's goal is to reduce carbon emissions to 0 by 2035. The graph shows changes in CO2 emissions since 2008,
+            <a href="https://sustainablecampus.cornell.edu/our-leadership/cap/ghg-inventory">source</a>
+          </p>
+        </div>
+        <%= javascript_include_tag  "solarize_charts" %>
+      <% end %>
+      <% if project.name? "Currents" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://currents-visualization.herokuapp.com" style="width:670px;height:707px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+	    <% end %>
 
       <div class="gallery">
       <% if project.photos %>
@@ -30,11 +49,8 @@
         <% end %>
       </div>
       <% end %>
-      <% if project.visualization %>
-        <iframe src="<%= project.visualization %>" style="width:1000px;height:800px;">
-        </iframe>
-        <% end %>
-    </article>
+
+    </div>
 
     <aside class="impact">
       <% if project.impact.key? 'video' %>
