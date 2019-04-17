@@ -1,6 +1,6 @@
 name: REAL
 logo: project-logos/real.jpg
-color: "#40e2e5"
+color: "#02685A"
 tagline: "Empowering local farms through the system of Aquaponics"
 hero_image: "project-photos/real-farm.jpg"
 lede: "REAL aims to address insecurities in the food system by designing a sustainable controlled 
@@ -15,11 +15,11 @@ region-specific crops, designing and building a greenhouse, and implementing sop
 control systems to maintain an ideal growing environment.
   </p>"
 photos:
-- url: project-photos/real1.jpg
+  - url: project-photos/real1.jpg
     des:
-- url: project-photos/real2.jpg
+  - url: project-photos/real2.jpg
     des:
- - url:
+  - url:
     des:
 impact:
   stats:

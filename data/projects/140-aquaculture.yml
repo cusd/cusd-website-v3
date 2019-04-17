@@ -1,6 +1,6 @@
 name: AquaCulture
 logo: project-logos/aquaculture.jpg
-color: "#247563"
+color: "#58D1D9"
 tagline: "Revolutionizing Fishing Industry with Marine Aquaculture"
 hero_image: "project-photos/aquaculture-header.jpg"
 lede: "AquaCulture aims to promote educational and economic empowerment within coastal communities 
@@ -15,11 +15,11 @@ of biological study of marine species and mechanical engineering principles to b
 efficient and effective.
   </p>"
 photos:
-- url: project-photos/aquaculture1.jpg
+  - url: project-photos/aquaculture1.jpg
     des:
-- url: project-photos/aquaculture2.jpg
+  - url: project-photos/aquaculture2.jpg
     des:
- - url:
+  - url:
     des:
 impact:
   stats:
