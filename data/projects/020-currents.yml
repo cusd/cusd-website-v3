@@ -15,8 +15,13 @@ photos:
   - url: project-photos/upson-2.jpg
   - des: "Air conditioning and ventilation make up 53% of energy use in commercial buildings."
   - url: project-photos/upson-3.jpg
+<<<<<<< HEAD
   - des: "Using cutting edge technologies including machine learning, smartphone applications, sensors, and wearables we are designing a system that will accurately predict whether a professor is in their office and turn their heating on/off based on this data.
               Currents applies computer science and electrical engineering skills to develop a system that offers substantial energy savings."
+=======
+    des:
+visualization: https://currents-visualization.herokuapp.com
+>>>>>>> origin/master
 impact:
   # video:
   #   url: https://www.youtube.com/embed/xTWT3oMcpOw
