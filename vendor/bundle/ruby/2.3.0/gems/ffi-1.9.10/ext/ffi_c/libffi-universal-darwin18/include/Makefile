@@ -15,7 +15,11 @@
 
 
 
+<<<<<<< HEAD
+VPATH = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
+=======
 VPATH = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
+>>>>>>> origin/master
 pkgdatadir = $(datadir)/libffi
 pkgincludedir = $(includedir)/libffi
 pkglibdir = $(libdir)/libffi
@@ -32,9 +36,15 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
+<<<<<<< HEAD
+build_triplet = x86_64-apple-darwin18.0.0
+host_triplet = x86_64-apple-darwin18.0.0
+target_triplet = x86_64-apple-darwin18.0.0
+=======
 build_triplet = x86_64-apple-darwin18.2.0
 host_triplet = x86_64-apple-darwin18.2.0
 target_triplet = x86_64-apple-darwin18.2.0
+>>>>>>> origin/master
 subdir = include
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(srcdir)/ffi.h.in
@@ -85,6 +95,17 @@ HEADERS = $(nodist_includes_HEADERS)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+<<<<<<< HEAD
+ACLOCAL = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run aclocal-1.11
+ALLOCA = 
+AMTAR = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run tar
+AM_LTLDFLAGS = 
+AM_RUNTESTFLAGS = 
+AR = ar
+AUTOCONF = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run automake-1.11
+=======
 ACLOCAL = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run aclocal-1.11
 ALLOCA = 
 AMTAR = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run tar
@@ -94,6 +115,7 @@ AR = ar
 AUTOCONF = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run autoconf
 AUTOHEADER = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run autoheader
 AUTOMAKE = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run automake-1.11
+>>>>>>> origin/master
 AWK = awk
 CC = xcrun clang
 CCAS = xcrun clang
@@ -132,9 +154,15 @@ LIPO = lipo
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
+<<<<<<< HEAD
+MAKEINFO = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run makeinfo
+MANIFEST_TOOL = :
+MKDIR_P = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh -c -d
+=======
 MAKEINFO = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh -c -d
+>>>>>>> origin/master
 NM = /usr/bin/nm -B
 NMEDIT = nmedit
 OBJDUMP = objdump
@@ -158,10 +186,17 @@ STRIP = strip
 TARGET = X86_DARWIN
 TARGETDIR = x86
 VERSION = 3.0.10
+<<<<<<< HEAD
+abs_builddir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi-universal-darwin18/include
+abs_srcdir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
+abs_top_builddir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi-universal-darwin18
+abs_top_srcdir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi
+=======
 abs_builddir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi-universal-darwin18/include
 abs_srcdir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
 abs_top_builddir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi-universal-darwin18
 abs_top_srcdir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi
+>>>>>>> origin/master
 ac_ct_AR = ar
 ac_ct_CC = xcrun clang
 ac_ct_DUMPBIN = 
@@ -172,10 +207,17 @@ am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 ax_enable_builddir_sed = sed
 bindir = ${exec_prefix}/bin
+<<<<<<< HEAD
+build = x86_64-apple-darwin18.0.0
+build_alias = 
+build_cpu = x86_64
+build_os = darwin18.0.0
+=======
 build = x86_64-apple-darwin18.2.0
 build_alias = 
 build_cpu = x86_64
 build_os = darwin18.2.0
+>>>>>>> origin/master
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -183,21 +225,36 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
+<<<<<<< HEAD
+host = x86_64-apple-darwin18.0.0
+host_alias = 
+host_cpu = x86_64
+host_os = darwin18.0.0
+=======
 host = x86_64-apple-darwin18.2.0
 host_alias = 
 host_cpu = x86_64
 host_os = darwin18.2.0
+>>>>>>> origin/master
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
+<<<<<<< HEAD
+install_sh = ${SHELL} /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh
+=======
 install_sh = ${SHELL} /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh
+>>>>>>> origin/master
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
+<<<<<<< HEAD
+mkdir_p = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh -c -d
+=======
 mkdir_p = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/install-sh -c -d
+>>>>>>> origin/master
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr/local
@@ -205,6 +262,15 @@ program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
+<<<<<<< HEAD
+srcdir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
+sys_symbol_underscore = 
+sysconfdir = ${prefix}/etc
+target = x86_64-apple-darwin18.0.0
+target_alias = 
+target_cpu = x86_64
+target_os = darwin18.0.0
+=======
 srcdir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi/include
 sys_symbol_underscore = 
 sysconfdir = ${prefix}/etc
@@ -212,12 +278,17 @@ target = x86_64-apple-darwin18.2.0
 target_alias = 
 target_cpu = x86_64
 target_os = darwin18.2.0
+>>>>>>> origin/master
 target_vendor = apple
 toolexecdir = $(libdir)/gcc-lib/$(target_alias)
 toolexeclibdir = $(libdir)/
 top_build_prefix = ../
 top_builddir = ..
+<<<<<<< HEAD
+top_srcdir = /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi
+=======
 top_srcdir = /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.10/ext/ffi_c/libffi
+>>>>>>> origin/master
 AUTOMAKE_OPTIONS = foreign
 DISTCLEANFILES = ffitarget.h
 EXTRA_DIST = ffi.h.in ffi_common.h

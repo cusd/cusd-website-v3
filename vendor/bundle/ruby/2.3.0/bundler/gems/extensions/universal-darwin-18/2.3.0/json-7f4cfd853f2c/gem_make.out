@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190319-2018-19h226.rb extconf.rb
+creating Makefile
+
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+=======
 current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
 /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190320-65162-o7srrg.rb extconf.rb
 creating Makefile
@@ -10,4 +24,5 @@ make "DESTDIR="
 make: Nothing to be done for `all'.
 
 current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+>>>>>>> origin/master
 make "DESTDIR=" install
