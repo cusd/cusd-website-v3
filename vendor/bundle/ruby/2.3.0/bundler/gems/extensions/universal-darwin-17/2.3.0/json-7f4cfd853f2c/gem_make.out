@@ -1,0 +1,17 @@
+current directory: /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190501-51694-n29z7x.rb extconf.rb
+Ignoring eventmachine-1.0.8 because its extensions are not built.  Try: gem pristine eventmachine --version 1.0.8
+Ignoring ffi-1.9.10 because its extensions are not built.  Try: gem pristine ffi --version 1.9.10
+Ignoring http_parser.rb-0.6.0 because its extensions are not built.  Try: gem pristine http_parser.rb --version 0.6.0
+Ignoring nokogiri-1.10.1 because its extensions are not built.  Try: gem pristine nokogiri --version 1.10.1
+creating Makefile
+
+current directory: /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/vivien/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.3.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR=" install

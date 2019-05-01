@@ -31,14 +31,24 @@
         </div>
         <%= javascript_include_tag  "solarize_charts" %>
       <% end %>
+
       <% if project.name? "Currents" %>
         <br>
         <br>
         <br>
-        <iframe src="https://currents-visualization.herokuapp.com" style="width:670px;height:707px;" frameBorder="0">
+        <iframe src="https://currents-visualization.herokuapp.com" style="width:1095px;height:430px;" frameBorder="0">
           <p>Your browser does not support iframes.</p>
         </iframe>
 	    <% end %>
+
+      <% if project.name? "Sustainable Education Nepal" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
 
       <div class="gallery">
       <% if project.photos %>
