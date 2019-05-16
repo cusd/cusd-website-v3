@@ -2,7 +2,7 @@
 79fa7f352bae842017c885101a556875600fb468 refs/heads/fix-additions-problem-v1.5.5
 3ce359bbf308354b86e94248fc13dfd4b23c792e refs/heads/fix-additions-problem-v1.6.8
 d85896768c0276cec317fa0851a46845e68dfacc refs/heads/gh-pages
-463473c6c37b3a14fde4c2d21403d6dc8500c185 refs/heads/master
+55fec9562a2e1117304c3a8e48c0eba879112d55 refs/heads/master
 d76588541a65fd7c56e5c990fb7ba39eabeef277 refs/heads/raise-error-on-invalid-utf8
 23d86cde3397dd6a3b59cd0534ea8c066054af10 refs/heads/replace-nan
 7f4cfd853f2c919d854fb95548a19980feff17e8 refs/heads/v1.8
