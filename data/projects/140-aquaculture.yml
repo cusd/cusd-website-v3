@@ -1,0 +1,31 @@
+name: AquaCulture
+logo: project-logos/aquaculture.jpeg
+color: "rgb(123,206,212)"
+tagline: "Revolutionizing Fishing Industry with Marine Aquaculture"
+hero_image: "project-photos/aquaculture-header.jpg"
+lede: "AquaCulture aims to promote educational and economic empowerment within coastal communities 
+by creating an aquaculture system that is both financially and environmentally sustainable."
+description:
+  "<p>
+In collaboration with Shoals Marine Laboratory, this project focuses on providing accessible, 
+sustainable, and environmentally conscious options to the fishing industry through marine aquaculture. 
+The goal of this project is to design and build an aquaculture module that can maintain multiple 
+different species and withstand the turbulence of open waters. This project will rely on a combination 
+of biological study of marine species and mechanical engineering principles to build a module that is 
+efficient and effective.
+  </p>"
+photos:
+  - url: project-photos/aquaculture1.jpg
+    des:
+  - url: project-photos/aquaculture2.jpg
+    des:
+  - url: project-photos/aquaculture3.jpeg
+    des:
+impact:
+  stats:
+    - title:
+      number:
+    - title:
+      number:
+    - title:
+      number:

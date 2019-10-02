@@ -1,0 +1,33 @@
+<<<<<<< HEAD
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190320-33495-bjgpd9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+=======
+current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190320-65162-1na08eo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+>>>>>>> origin/master
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+<<<<<<< HEAD
+current directory: /Users/fiorellaatoche/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20190320-33495-1h3gmwn
+=======
+current directory: /Users/LilyPagan/github/cusd-v3/vendor/bundle/ruby/2.3.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20190320-65162-1h1xe7z
+>>>>>>> origin/master

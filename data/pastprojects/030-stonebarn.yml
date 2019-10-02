@@ -7,7 +7,7 @@ lede: "Stone Barns Recycling"
 description: "<p> The Stone Barns Team is working with the Stone Barns Center for Food and Agriculture to reimagine waste management by seeing decaying farm matter as free, usable energy for the farm. Our specific area of focus for this semester involves designing a system to replace a hot water heater in a barn using the heat generated from a nearby compost pile. This system will include a heart collector in the compost pile, a heat exchanger, and a heated water tank inside the barn which will dispense water for all utilities. The Stone Barns Center is a pioneer in sustainable farming, educating farms nationwide, and we hope that our optimized designs can be showcased as innovative, easily implementable systems for all. </p>"
 photos:
   - url: project-photos/bluehill-1.jpg
-    des: 
+    des:
   - url: project-photos/bluehill-2.jpg
     des:
   - url: project-photos/bluehill-3.jpg
@@ -16,4 +16,4 @@ impact:
   stats:
      - title: Food in America Wasted
        number: 40%
-     - title: 
+     - title:

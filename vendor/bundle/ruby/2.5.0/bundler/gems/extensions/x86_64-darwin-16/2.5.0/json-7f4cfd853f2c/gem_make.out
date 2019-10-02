@@ -1,0 +1,13 @@
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/bundler/gems/json-7f4cfd853f2c/ext/json
+/Users/Genghis/.rvm/rubies/ruby-2.5.1/bin/ruby -I /Users/Genghis/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190416-39450-f21vfd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/bundler/gems/json-7f4cfd853f2c/ext/json
+make "DESTDIR=" install

@@ -1,0 +1,16 @@
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.0.8/ext/fastfilereader
+/Users/Genghis/.rvm/rubies/ruby-2.5.1/bin/ruby -I /Users/Genghis/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190416-39450-190tzg0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/Genghis/Desktop/CUSD/cusd-v3/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20190416-39450-135bze9

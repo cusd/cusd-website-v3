@@ -8,14 +8,87 @@
 </div>
 
 <div class="sidebar-box">
-  <div class="sidebar-box__wrapper">
 
-    <article class="description">
-      <p class="lede">
-        <%= project.lede %>
-      </p> 
+  <article class="intro">
+  <p class="intro__mission">
+    Our Mission
+  </p>
+  <p class="lede">
+    <%= project.lede %>
+  </p>
+  </article>
 
+  <div class="description">
       <%= project.description %>
+
+      <% if project.name? "Solarize" %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <div class="chart">
+          <canvas id="lineChart" width="400" height="400"></canvas>
+          <p class="chart-caption">Cornell's goal is to reduce carbon emissions to 0 by 2035. The graph shows changes in CO2 emissions since 2008,
+            <a href="https://sustainablecampus.cornell.edu/our-leadership/cap/ghg-inventory">source</a>
+          </p>
+        </div>
+        <%= javascript_include_tag  "solarize_charts" %>
+      <% end %>
+
+      <% if project.name? "Tiny Home" %> <!-- start tiny home -->
+        <img src="../images/project-photos/tinyhomevis.svg" />
+      <% end %> <!-- end tiny home -->
+      
+      <% if project.name? "Currents" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://currents-visualization.herokuapp.com" style="width:1095px;height:430px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+	    <% end %>
+
+      <% if project.name? "Sustainable Education Nepal" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
+
+      <% if project.name? "Sustainable Education Ghana" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
+
+      <% if project.name? "Smart Village India" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
+
+      <% if project.name? "Sustainable Neighborhoods Nicaragua" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
+
+      <% if project.name? "Schoolhouse South Africa" %>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://cusd-sustainable-education.herokuapp.com" style="width:1052px;height:467px;" frameBorder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      <% end %>
 
       <div class="gallery">
       <% if project.photos %>
@@ -26,7 +99,8 @@
         <% end %>
       </div>
       <% end %>
-    </article>
+
+    </div>
 
     <aside class="impact">
       <% if project.impact.key? 'video' %>
