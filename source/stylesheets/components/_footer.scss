@@ -33,7 +33,7 @@
     @media #{$small-only} {
       @include grid-column($columns: 12);
       ul {
-        @include block-grid(1);
+        @include block-grid(2);
       }
     }
   }
