@@ -1,10 +1,15 @@
+$boxsize: (100% / 4);
+
 .projects-page {
 
   .sidebar-box {
-    @include sidebar-box($columns: 5, $side: right);
+    //removing this include removes the gray side bar on the page background
+    //@include sidebar-box($columns: 5, $side: right);
+    padding-bottom: 4rem;
 
     @media screen and (max-width: $medium-breakpoint){
       padding: rem-calc(0 20);
+      padding-bottom: 4rem;
     }
 
     @media screen and (max-width: $small-breakpoint){
@@ -20,8 +25,18 @@
     }
   }
 
+  .projects-list__project__text_overlay {
+    opacity: 0;
+    // position: absolute;
+    overflow: inherit;
+    //width: (100% / 5);
+    height: 100%;
+    text-align: center;
+    background-color: $light-gray;
+  }
+
   .projects-list {
-    @include grid-column($columns: 12);
+    //@include grid-column($columns: 12);
     padding: rem-calc(72-9 0);
     display: flex;
     flex-wrap: wrap;
@@ -31,58 +46,87 @@
     }
 
     &__project {
-      padding-right: 1rem;
+      padding-right: 2rem;
       margin-top: rem-calc(48);
-      width: 50%;
+      padding-top: 3rem;
+      width: (100% / 4); //alter size of past projects
       @media screen and (max-width: $small-breakpoint){
         width: 100%;
         padding: rem-calc(0 0);
       }
+      
+
+      &__container {
+        height: 100%;
+        // background-color: $light-gray;
+        &:hover .projects-list__project__text_overlay {
+          color: black;
+          opacity: 0.8;
+          // width: 100%;
+          // height: 100%;
+        }
+      }
 
       &__logo {
         float: left;
-        width: percentage(2/6);
+        width: 100%;
+        height: 100%;
         padding-top: percentage(2/6);
-        background-color: $light-gray;
+        //background-color: $light-gray;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 45% 65%;
         opacity: 1;
         transition: opacity $transition-speed;
-        &:hover { opacity: .8 }
+        &:hover .text_overlay { 
+          opacity: .8;
+        }
       }
 
+      // &__logo:hover &__text_overlay {
+      //   opacity: 1;
+      // }
+
       &__text {
-        float: left;
-        width: percentage(4/6);
-        padding-left: rem-calc(16);
+        //float: left;
+        //width: percentage(4/6);
+        //padding-top: rem-calc(16);
+        text-align: center;
       }
 
       &__name {
         margin-top: rem-calc(-5);
+        font-size: larger;
         opacity: 1;
         transition: opacity $transition-speed;
         &:hover { opacity: .8 }
       }
 
       &__tagline {
-        font-size: rem-calc(20);
+        // font-size: rem-calc(20);
+        width: inherit;
+        height: inherit;
+        text-align: center;
       }
     }
 
     &--current-projects {
-      @include grid-column($columns: 6);
+      //@include grid-column($columns: 3);
 
-      @media screen and (max-width: $small-breakpoint){
+      @media screen {
         width: 100%;
         padding: rem-calc(20 0);
       }
-
-      .projects-list__project {
-        width: 100%;
-      }
+      
     }
   }
+
+  
+
+  // .projects-list__project__container:hover .text_overlay {
+  //   color: blue;
+  //   opacity: 1;
+  // }
 
   .choose-project {
     @include grid-column($columns: 4, $offset: 2);
