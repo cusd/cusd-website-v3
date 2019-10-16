@@ -1,0 +1,27 @@
+name: Coronado
+logo: project-logos/coronado.jpg
+color: "#FCD83F"
+tagline: Defending our way of life from climate change
+hero_image: 
+lede: "Working with the National Guard to develop renewable energy sites at various National Guard bases"
+description: " <p> The nation is in desperate need of more renewable energy.  There was an idea that the National Guard could be 
+hired on as full-time employees to construct renewable energy developments at National Guard bases.  This would not only provide 
+National Guard employees with a lifelong trade skill but would also increase the amount of renewable energy being used in the 
+Department of Defense, while also helping to mitigate one of the biggest current threats to our way of life: climate change.  
+Our team of engineers has been working with contacts in the National Guard to write a proposal with the long-term goal of pushing 
+our ideas through congress to make a real-world impact with full-scale implementations."
+photos:
+  - url: project-photos/coronado1.jpg
+    des: 
+  - url:
+    des: 
+  - url: 
+    des: 
+impact:
+  stats:
+    - title: 
+      number: 
+    - title: 
+      number: 
+    - title: 
+      number: 
