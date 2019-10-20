@@ -67,12 +67,13 @@ title: Projects
 
       <div class="projects-list">
         <h2 class="projects-list__header">Research, Events and Outreach</h2>
-        <% data.small_projects.each do |project| %>
-          <article class="projects-list__project">
-            <h3 class="projects-list__project__name"><%= project.name %></h3>
-            <span class="projects-list__project__tagline"><%= project.tagline %></span>
-          </article>
-        <% end %>
+        <div class="otherprojects">
+          <% data.small_projects.each do |project| %>
+            
+              <h3 class="projectname"><%= project.name %></h3>
+        
+          <% end %>
+        </div>
       </div>
 
   </div>
