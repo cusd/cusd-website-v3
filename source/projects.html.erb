@@ -32,34 +32,27 @@ title: Projects
 
   <div class="photo-strip" style="background-image: url(/images/photostrips/ps7.jpg)"></div>
 
-  <div class="projects-secondary">
+  <div class="past-projects">
+    <h2 class="past-projects__header">Past Projects</h2>
+    <%= javascript_include_tag  "carousel.js" %>
+    <div class="past-projs-carousel">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+
+	<div class="projects-secondary">
+
     <div class="projects-list">
-      <h2 class="projects-list__header">Past Projects</h2>
-
-      <% data.pastprojects.each do |project| %>
-          <article class="projects-list__project">
-            <% link_to "/projects/#{project[0].split('-')[1]}" do %>
-              <div class="projects-list__project__logo <%= project[0].split('-')[1] %>" style="background-image: url(/images/<%= project[1].logo %>); background-color: <%= project[1].color %>"></div>
-            <% end %>
-            <div class="projects-list__project__text">
-              <% link_to "/projects/#{project[0].split('-')[1]}" do %>
-                <h3 class="projects-list__project__name"><%= project[1].name %></h3>
-              <% end %>
-              <span class="projects-list__project__tagline"><%= project[1].tagline %></span>
-            </div>
-          </article>
-        <% end %>
-      </div>
-
-      <div class="projects-list">
-        <h2 class="projects-list__header">Research, Events and Outreach</h2>
-        <% data.small_projects.each do |project| %>
-          <article class="projects-list__project">
-            <h3 class="projects-list__project__name"><%= project.name %></h3>
-            <span class="projects-list__project__tagline"><%= project.tagline %></span>
-          </article>
-        <% end %>
-      </div>
+      <h2 class="projects-list__header">Research, Events and Outreach</h2>
+      <% data.small_projects.each do |project| %>
+        <article class="projects-list__project">
+          <h3 class="projects-list__project__name"><%= project.name %></h3>
+          <span class="projects-list__project__tagline"><%= project.tagline %></span>
+        </article>
+      <% end %>
+    </div>
 
   </div>
 
