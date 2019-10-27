@@ -1,6 +1,6 @@
 .projects-page {
 
-  .sidebar-box {
+  .sidebar-box.current-projects {
     @include sidebar-box($columns: 5, $side: right);
 
     @media screen and (max-width: $medium-breakpoint){
@@ -110,6 +110,66 @@
 
     &__button {
       width: auto;
+    }
+  }
+
+  .teams-sidebar {
+    h2 {
+      padding-top: rem-calc(63)
+    }
+  }
+
+  .teams-section {
+      @include grid-column($columns:12, $offset:.5);
+      display: flex;
+      flex-wrap: wrap;
+      padding: rem-calc(15 0 63 0);
+
+      @media #{$medium-only} {
+        @include grid-column($columns: 6.5, $offset: 1.5);
+      }
+
+      @media #{$small-only} {
+        @include grid-column($columns:12, $offset: 0);
+        padding: rem-calc(0 12 20 12);
+      }
+
+      &__project {
+        padding-right: 1rem;
+        margin-top: rem-calc(48);
+        width: 75%;
+        @media screen and (max-width: $medium-breakpoint){
+        width: 100%
+      }
+    }
+    &__logo {
+      float: left;
+      width: percentage(2/6);
+      padding-top: percentage(2/6);
+      background-color: $light-gray;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 40% 40%;
+      opacity: 1;
+      transition: opacity $transition-speed;
+      &:hover { opacity: .8 }
+    }
+
+    &__text {
+      float: left;
+      width: percentage(4/6);
+      padding-left: rem-calc(16);
+    }
+
+    &__name {
+      margin-top: rem-calc(-5);
+      opacity: 1;
+      transition: opacity $transition-speed;
+      &:hover { opacity: .8 }
+    }
+
+    &__tagline {
+      font-size: rem-calc(20);
     }
   }
 }
