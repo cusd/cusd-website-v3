@@ -42,4 +42,6 @@ Has something to do with the build version of the json. This command has fixed i
 
 `gem 'json', github: 'flori/json', branch: 'v1.8'`
 
+On Ubuntu, if you encounter an error with this line above in `Gemfile`, replace it with `gem 'json', '>= 1.8'`, then run `bundle install`
 
+If `middleman build` doesn't work, try `bundle exec middleman build`
