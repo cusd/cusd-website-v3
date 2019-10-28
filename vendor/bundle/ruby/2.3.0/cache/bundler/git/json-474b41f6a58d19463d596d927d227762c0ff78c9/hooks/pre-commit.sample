@@ -13,7 +13,6 @@ then
 else
 	# Initial commit: diff against an empty tree object
 	against=$(git hash-object -t tree /dev/null)
-
 fi
 
 # If you want to allow non-ASCII filenames set this variable to true.

@@ -9,15 +9,16 @@ description:
 "
 photos:
   - url: project-photos/bus-1.jpg
-    des:
+    des: 
   - url: project-photos/bus-2.jpg
     des:
   - url: project-photos/bus-3.jpg
     des:
 impact:
   stats:
-     - title: Number of Research Groups committed
+     - title: Number of Research Groups Committed
        number: 3
-     - title: Number of team members
+     - title: Number of Team Members
        number: 22
-     - title: Official Partnership with TCAT
+     - title: Official Partnership 
+       number: With TCAT
