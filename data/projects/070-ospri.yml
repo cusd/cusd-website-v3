@@ -4,7 +4,7 @@ color: rgb(0,120,184)
 tagline: One Smithsonian Plastic Reduction Initiative
 hero_image: "project-photos/ospri-1.jpg"
 lede: "Assist the Smithsonian National Zoo in actualizing their plastic reduction initiatives"
-description: " <p> OSPRI represents a longstanding relationship CUSD has with the Smithsonian Institution. In the past, our team has worked with closely with the National Zoo to find viable alternatives to single-use plastic water bottles they can actually implement on their premises. We also take part in the Zoo’s annual Earth Optimism event. More information regarding that can be found here: https://news.cornell.edu/stories/2019/04/earth-day-2019-cornell-students-teach-kids-reduce-plastic. This year we are moving forward in our partnership with the Zoo, and are building zero-waste guidelines that the Zoo will utilize in event planning."
+description: " <p> OSPRI represents a longstanding relationship CUSD has with the Smithsonian Institution. In the past, our team has worked with closely with the National Zoo to find viable alternatives to single-use plastic water bottles they can actually implement on their premises. We also take part in the Zoo’s annual Earth Optimism event (more information regarding that can be found <a href='https://news.cornell.edu/stories/2019/04/earth-day-2019-cornell-students-teach-kids-reduce-plastic'>here</a>.) This year we are moving forward in our partnership with the Zoo, and are building zero-waste guidelines that the Zoo will utilize in event planning."
 photos:
   - url: project-photos/ospri-3.jpg
     des: 
