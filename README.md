@@ -35,6 +35,12 @@ https://codi.engineering.cornell.edu
 
 Once you have access, and you are **on RedRover or have a VPN setup**, build the current site with `middleman build`. From here, using your fav FTP client (I prefer [Filezilla](https://filezilla-project.org/)). Connect to the site at host: sftp://cusd.cornell.edu and I think the username and pass are your netID logins. You should see the website under the htdocs. Drag and drop the updated content from your local device to the server and you should see the live site updated instantaneously. 
 
+# Check build
+
+`cd build`
+
+`ruby -run -e httpd . -p 8080`
+
 
 # Known Errors
 On macOS High Sierra, there is a json issue with Middleman
