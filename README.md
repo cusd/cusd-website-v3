@@ -48,6 +48,9 @@ Has something to do with the build version of the json. This command has fixed i
 
 `gem 'json', github: 'flori/json', branch: 'v1.8'`
 
-On Ubuntu, if you encounter an error with this line above in `Gemfile`, replace it with `gem 'json', '>= 1.8'`, then run `bundle install`
+If you encounter an error with this line above in `Gemfile`, replace it with `gem 'json', '>= 1.8'`, then run `bundle install`
 
 If `middleman build` doesn't work, try `bundle exec middleman build`
+
+# Request removal of information
+This repo contains some archived files. If your information is in any of those files and you would like it removed, contact the director of CUSD and request that the technical operations team remove it.
