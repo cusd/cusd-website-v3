@@ -1,10 +1,16 @@
-name: OSPRI
+name: SST
 logo: project-logos/ospri.jpg
 color: rgb(0,120,184)
-tagline: One Smithsonian Plastic Reduction Initiative
+tagline: Smithsonian Sustainability Team
 hero_image: "project-photos/ospri-1.jpg"
-lede: "Assist the Smithsonian National Zoo in actualizing their plastic reduction initiatives"
-description: " <p> OSPRI represents a longstanding relationship CUSD has with the Smithsonian Institution. In the past, our team has worked with closely with the National Zoo to find viable alternatives to single-use plastic water bottles they can actually implement on their premises. We also take part in the Zoo’s annual Earth Optimism event (more information regarding that can be found <a href='https://news.cornell.edu/stories/2019/04/earth-day-2019-cornell-students-teach-kids-reduce-plastic'>here</a>.) This year we are moving forward in our partnership with the Zoo, and are building zero-waste guidelines that the Zoo will utilize in event planning."
+lede: "Partner with the Smithsonian Institution to actualize sustainability initiatives"
+description: " <p> SST represents a longstanding sustainability-focused relationship that CUSD has
+maintained with the Smithsonian Institution. In the past, our work focused on assisting the
+Smithsonian’s National Zoo with their plastics reduction initiative. Currently, our team operates
+on a flexible advisory model, addressing a range of Smithsonian sustainability initiatives. In Fall
+2019, we researched and wrote a report on best practices for zero-waste events planning at
+Smithsonian. During Spring 2020 we are excited to continue revising and updating this report as
+well as consulting on other sustainability projects Smithsonian has underway."
 photos:
   - url: project-photos/ospri-3.jpg
     des: 
