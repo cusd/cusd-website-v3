@@ -7,11 +7,11 @@ lede: "Solarize aims to spark Cornell Grounds’ transition to carbon neutrality
 description:
   "<p> Our first project involves developing a solar trailer which will provide on-the-go sustainable energy for the maintenance of Cornell's campus. Once this is implemented, we hope to expand our efforts to additional renewable energy projects within Cornell Grounds and the surrounding community. </p>"
 photos:
-  - url: project-photos/sol-trailer1.jpg
+  - url: project-photos/sol1.jpg
     des: 
-  - url: project-photos/sol-trailer2.jpg
+  - url: project-photos/sol2.jpg
     des:
-  - url: project-photos/sol-trailer3.PNG
+  - url: project-photos/sol3.PNG
     des:
 impact:
     stats:
