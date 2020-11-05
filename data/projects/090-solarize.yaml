@@ -7,16 +7,17 @@ lede: "Solarize aims to spark Cornell Grounds’ transition to carbon neutrality
 description:
   "<p> Our first project involves developing a solar trailer which will provide on-the-go sustainable energy for the maintenance of Cornell's campus. Once this is implemented, we hope to expand our efforts to additional renewable energy projects within Cornell Grounds and the surrounding community. </p>"
 photos:
-  - url: project-photos/sol-1.jpg
+  - url: project-photos/sol1.jpg
     des: 
-  - url: project-photos/sol-2.jpg
+  - url: project-photos/sol2.jpg
     des:
-  - url: project-photos/sol-3.jpg
+  - url: project-photos/sol3.PNG
     des:
 impact:
-  stats:
-     - title: 2016 Cornell CO2 emissions
-       number: 212,400
-     - title: 2035 Cornell C02 emissions goal
-       number: 0
-    
+    stats:
+       - title: 2008 Cornell CO2 baseline emissions
+         number: 318,625
+       - title: 2019 Cornell CO2 emissions
+         number: 203,001
+       - title: 2035 Cornell C02 emissions goal
+         number: 0

@@ -22,9 +22,13 @@
       <%= project.description %>
 
       <% if project.name? "Solarize" %>
+	<div>
+	  <p><b>We were recently featured in a <a href="https://news.cornell.edu/stories/2020/09/unplugged-students-build-green-trailer-energize-tools">Cornell Chronicle article</a>, as well as in <a href="https://sustainablecampus.cornell.edu/annualreport2020#campus_operations">Cornell's '2019-2020 Sustainability Report'</a>.</b>
+	  </p>
+	</div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
         <div class="chart">
-          <canvas id="lineChart" width="400" height="400"></canvas>
+          <canvas id="lineChart" width="400" height="175"></canvas>
           <p class="chart-caption">Cornell's goal is to reduce carbon emissions to 0 by 2035. The graph shows changes in CO2 emissions since 2008,
             <a href="https://sustainablecampus.cornell.edu/our-leadership/cap/ghg-inventory">source</a>
           </p>
