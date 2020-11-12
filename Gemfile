@@ -14,4 +14,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 #pls 
-gem 'json', github: 'flori/json', branch: 'v1.8'
+gem 'json', '>= 1.8'
