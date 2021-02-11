@@ -45,6 +45,12 @@ Once you have access, and you are **on RedRover or have a VPN setup**, build the
 # Known Errors
 Downgrade `bundler` to version `1.1.0` if you see an error message about the bundler version.
 
+```
+gem install bundler:1.17.3
+bundle _1.17.3_ install
+bundle _1.17.3_ exec middleman build
+```
+
 On macOS High Sierra, there is a json issue with Middleman
 Has something to do with the build version of the json. This command has fixed it in the past but who knows how Apple could change their configs.
 
