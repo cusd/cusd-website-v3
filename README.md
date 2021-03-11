@@ -45,6 +45,8 @@ Once you have access, and you are **on RedRover or have a VPN setup**, build the
 # Known Errors
 Downgrade `bundler` to version `1.1.0` if you see an error message about the bundler version.
 
+1. Delete Gemfile.lock
+2. Run the following commands:
 ```
 gem install bundler:1.17.3
 bundle _1.17.3_ install
