@@ -12,10 +12,9 @@ The main working folders are `data` or `source`.
 
 # How to use this project
 
-To run this directory, install [Middleman](https://middlemanapp.com/basics/install/)  onto your local device
+See the INSTALL.md file.
 
-
-From this directory, run 
+Install the requirements using `bundle install`. From this directory, run 
 
 `bundle exec middleman server`
 
