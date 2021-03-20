@@ -28,6 +28,19 @@ If successful, run `bundle exec middleman server` and navigate to localhost:4567
 
 Try replacing `gem 'json', github: 'flori/json', branch: 'v1.8'` in Gemfile with `gem 'json', '>= 1.8'`. Run `bundle install` again.
 
+### ...Reason: Image not found (Mac)
+
+Try these commands:
+
+```
+rvm pkg install openssl
+rvm remove 2.7.0
+rvm install 2.7.0 --with-openssl-dir=$HOME/.rvm/usr
+gem install bundler
+```
+
+Then start from step 1 again.
+
 ### Help
 
 I'm no longer involved with CUSD, but if nothing in this post works, feel free to reach out via email or private message.
