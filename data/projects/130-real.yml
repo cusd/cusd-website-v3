@@ -9,10 +9,8 @@ increase the knowledge base surrounding sustainable agriculture, and make locall
 healthy crops more accessible."
 description:
   "<p>
-This project is currently in a research and development 
-phase with the ultimate goals of designing a recirculating aquaponics system to support 
-region-specific crops, designing and building a greenhouse, and implementing sophisticated 
-control systems to maintain an ideal growing environment.
+"This project is currently in the modeling and prototyping phase with the ultimate goals of creating thermodynamic models for our greenhouse,
+ creating an online tool to help farmers create and monitor their plant beds, and determining the feasibility of this project in the local Ithaca area."
   </p>"
 photos:
   - url: project-photos/real1.jpg
