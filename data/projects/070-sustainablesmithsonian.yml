@@ -1,0 +1,35 @@
+name: SST
+logo: project-logos/ospri.jpg
+color: rgb(0,120,184)
+tagline: Sustainable Smithsonian!
+hero_image: "project-photos/ospri-1.jpg"
+lede: "Partner with the Smithsonian Institution to actualize sustainability initiatives"
+description: " <p> SST represents a longstanding sustainability-focused relationship that 
+CUSD has maintained with the Smithsonian Institution. In the past, our work focused on 
+assisting the Smithsonian’s National Zoo with their plastics reduction initiative. 
+Currently, our team operates on a flexible advisory model, addressing a range of 
+Smithsonian sustainability initiatives. During 2019-2020 we researched and wrote a
+ report on best practices for zero-waste events planning at Smithsonian. In Fall 
+ 2020, we developed a green certification comparison tool to help Smithsonian 
+ compare and contrast opportunities and requirements for different green certification 
+ programs they might pursue at various of its hundreds of buildings and facilities. 
+ This project continues in Spring 2021: now we’re working on incorporating modelling 
+ capabilities into this tool, and we’re also exploring other practices Smithsonian 
+ could adopt tactically to improve its implementation of the array of sustainability, 
+ wellness, and equity practices green certifications support nowadays."
+
+photos:
+  - url: project-photos/ospri-3.jpg
+    des: 
+  - url: project-photos/ospri-2.png
+    des: 
+  - url: project-photos/ospri-4.jpg
+    des: 
+impact:
+  stats:
+    - title: 
+      number: 
+    - title: 
+      number: 
+    - title: 
+      number: 

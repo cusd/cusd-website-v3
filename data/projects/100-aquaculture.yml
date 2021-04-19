@@ -7,19 +7,28 @@ lede: "AquaCulture aims to promote educational and economic empowerment within c
 by creating an aquaculture system that is both financially and environmentally sustainable."
 description:
   "<p>
-In collaboration with Shoals Marine Laboratory, this project focuses on providing accessible, 
-sustainable, and environmentally conscious options to the fishing industry through marine aquaculture. 
-The goal of this project is to design and build an aquaculture module that can maintain multiple 
-different species and withstand the turbulence of open waters. This project will rely on a combination 
-of biological study of marine species and mechanical engineering principles to build a module that is 
-efficient and effective.
+Aquaculture is working to identify opportunities for improvement within recirculating 
+aquaculture systems, in order to design and implement solutions in partnership with 
+Pacific Jade LLC., Professor Michael Timmons, Finger Lakes Fish, and Hudson Valley 
+Fish Farms. The team is developing software to monitor fish feeding patterns through 
+multiple avenues, and evaluating data through machine learning software. The goal of 
+the project is to develop a ‘smart’ application for automatic fish feeding systems 
+in order to optimize fish feeding schedules based on behavior. The product focuses 
+on group monitoring, rather than individualized monitoring, and uses the concept of 
+“splash factor” to determine whether fish behavior remains consistent with the data on 
+a day to day and diurnal pattern basis. Fish behavior will be particularly monitored 
+during feeding cycles to identify any trends in nutrient content in the water. Water 
+quality parameters that will be monitored include dissolved oxygen, ammonia, electrical c
+onductivity, pH, temperature and water level in the tank. 8:48 Our mission: Using 
+machine learning to create more feed-efficient recirculating aquaculture systems.
+
   </p>"
 photos:
-  - url: project-photos/aquaculture1.jpg
+  - url: project-photos/aquaculture11.jpg
     des:
-  - url: project-photos/aquaculture2.jpg
+  - url: project-photos/aquaculture22.jpg
     des:
-  - url: project-photos/aquaculture3.jpeg
+  - url: project-photos/aquaculture33.jpeg
     des:
 impact:
   stats:
