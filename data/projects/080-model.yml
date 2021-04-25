@@ -1,12 +1,14 @@
 name: ICN 2030 Neutrality Modeling
 logo: project-logos/ebm.png
 color: rgb(176,234,213)
-tagline: Ithaca Carbon Neutral 2030 Modeling
+tagline: ICN 2030 Neutrality Modeling
 hero_image: "project-photos/ebm-header.jpg"
 lede: " Helping make existing buildings in Ithaca carbon neutral by 2030"
 description: " <p> Existing Building Model (Ithaca Carbon Neutral 2030 Modeling) is a consulting team working with the City of Ithaca to help make existing buildings in the city carbon neutral by the year 2030. More specifically, the Existing Building Model is modeling and analyzing different retrofit options to these buildings to get the most optimal energy usage savings and greenhouse gas reductions, all of which will inform ICN 2030 Policy. Stakeholders for this project include the City and Town of Ithaca, Historic Ithaca, Cornell Cooperative Extension, Ithaca 2030 District, Tompkins County Climate Protection Initiative, Landlords Association, and Tenants Association. 
 
 3D Models of existing buildings are produced in rhino modeling software. Data which informs these models are a result of stakeholder outreach, FOIL requests, Satellite Imagery, and onsite visits. Geometry is then utilized by DIVA for Grasshopper to run an energy simulation which utilizes energyplus to take into account building construction, occupancy and equipment loads. These simulations produce monthly energy usage estimations which are used to test our calibration against actually building energy usage. Once our model is calibrated, we perform varies retrofits which test out different infiltrations, window types, construction assemblies, heating systems, and temperature control systems to determine the most potential for making the buildings the most energy efficient and the relative costs associated with this and its potential return on investment and payback period for varies retrofits. 
+
+
 "
 impact:
   stats:
